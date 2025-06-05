@@ -1,0 +1,7 @@
+# robots.txt for https://kibls.neocities.org/
+
+User-agent: *
+Disallow:
+
+Sitemap: https://kibls.neocities.org/sitemap.xml
+

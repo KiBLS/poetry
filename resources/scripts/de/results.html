@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <meta charset="utf-8">
+   <meta content="index, follow" name="robots">
+   <meta content="Hier findest du die Suchergebnisse aus deiner Gedichtsuche." name="description">
+   <meta content="poesie, gedichte, gedicht, literatur, kunst, kreativität" name="keywords">
+   <meta content="KiBLS" name="author">
+   <meta content="origin-when-crossorigin" name="referrer">
+   <title>KiBLS Suche</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../../../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../../../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../../../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../../../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../../../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../../styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="en" href="https://kibls.neocities.org/resources/scripts/en/results">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/resources/scripts/es/results">
+   <link rel="alternate" hreflang="ru" href="https://kibls.neocities.org/resources/scripts/ru/results">
+   <link rel="alternate" hreflang="zh" href="https://kibls.neocities.org/resources/scripts/zh/results">
+   <link href="https://kibls.neocities.org/resources/scripts/de/results" rel="canonical">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     form {
+	display: none;
+     }
+     .mybutton {
+	display: none;
+     }
+     #search {
+	display: none;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav aria-label="Breadcrumb" class="breadcrumb">
+  <ul>
+    <li><a href="../../../de/de_home.html">Startseite ➤</a></li>
+    <li><a href="javascript:history.back()">Vorherige Seite ➤</a></li>
+    <li aria-current="page">Suchergebnisse</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; Verse oder Titel zum Suchen eingeben" title="Enter search keywords">
+  <input type="submit" value="Suche" id="searchbtn" name="search">
+</form>
+
+<a href="../../../de/de_home.html" title="Zurück zur Startseite" aria-label="Zurück zur Startseite">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../../chess/de_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../../chess/de_chess_white_large.webp" type="image/webp"> 
+  <img src="../../chess/de_chess_white_small.jpg" alt="Schachbrett">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../../chess/de_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../../chess/de_chess_black_large.webp" type="image/webp"> 
+  <img src="../../chess/de_chess_black_small.jpg" alt="Schachbrett">
+</picture>
+</div></a>
+
+<nav class="wrapping" aria-label="Open navigation">
+    <div tabindex="0" class="menutop">&#x2630; Menu
+        <ul class="menutop-dropdown">
+            <li><a href="../../../de/de_home.html">&#x1F3E0; Startseite</a></li>
+            <li><a href="../../../de/de_browse.html">&#x1F50D; Recherche</a></li>
+            <li><a href="../../../de/de_overview.html">&#x1F4DA; E-Book Übersicht</a></li>
+            <li><a href="../../../de/de_artwork.html">&#x1F3A8; Digitale Kunst</a></li>
+            <li><a href="../../../de/de_poetics.html">&#x1F4DD; Dichtkunst</a></li>
+            <li><a href="../../../de/de_support.html">&#x1F4B0; Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="menutop toprightone" tabindex="0" aria-label="Open language selection" style="padding:6px;">Deutsch
+  <ul class="menutop-dropdown topright">
+      <li><a href="../en/results.html" title="Sprachwechsel zu Englisch">Englisch</a></li>
+      <li><a href="#" class="activemenu" onclick="return false;" title="Aktiv gewählte Sprache">Deutsch</a></li>
+      <li><a href="../zh/results.html" title="Sprachwechsel zu Chinesisch">Chinesisch</a></li>
+      <li><a href="../es/results.html" title="Sprachwechsel zu Spanisch">Spanisch</a></li>
+      <li><a href="../ru/results.html" title="Sprachwechsel zu Russisch">Russisch</a></li>
+      <li><a href="../../../de/de_gtranslate.html" title="Wähle eine andere Sprache">Andere</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Hell- und Dunkelmodus umschalten."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>SUCHERGEBNISSE</h1>
+
+<h2>Hier kannst du sämtliche Gedichte filtern.<br>Gedichtbeschreibungen werden noch ergänzt.</h2>
+
+<a href="javascript:history.back()" class="myButton">Zurück</a>
+
+<main>
+
+<div id="app"></div>
+
+</main>
+
+<br>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+
+<footer class="contact">KiBLS Poesie 2007<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">Namensnennung - Weitergabe unter gleichen Bedingungen<br> 4.0 International (CC BY-SA 4.0)</a></footer>
+
+<script type="text/javascript" src="../openclose.js"></script>
+<script type="text/javascript" src="searchengine.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

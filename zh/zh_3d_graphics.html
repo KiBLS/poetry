@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="zh">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta name="description" content=" 探索由 KiBLS 使用 Blender 3D 创作的多种实用的 3D 图形，遵循 CC BY-SA 4.0 许可协议。">
+   <meta name="keywords" content="诗歌, 诗集, 诗, 文学, 艺术, 创造力">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-crossorigin">
+   <title>3D图形概述</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../resources/styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="en" href="https://kibls.neocities.org/en/en_3d_graphics">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/de/de_3d_graphics">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/es/es_3d_graphics">
+   <link rel="alternate" hreflang="ru" href="https://kibls.neocities.org/ru/ru_3d_graphics">
+   <link rel="canonical" href="https://kibls.neocities.org/zh/zh_3d_graphics">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="zh_home.html">主页 &#10148;</a></li>
+    <li><a href="zh_artwork.html">数字艺术作品 &#10148;</a></li>
+    <li aria-current="page">3D图形概述</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="../resources/scripts/zh/results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; 请输入要搜索的诗句或标题" title="请输入要搜索的诗句或标题">
+  <input type="submit" value="搜索" id="searchbtn" name="search">
+</form>
+
+<a href="zh_home.html" title="回到主页" aria-label="回到主页">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/zh_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/zh_chess_white_large.webp" type="image/webp"> 
+  <img src="../resources/chess/zh_chess_white_small.jpg" alt="棋盘">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/zh_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/zh_chess_black_large.webp" type="image/webp"> 
+  <img src="../resources/chess/zh_chess_black_small.jpg" alt="棋盘">
+</picture>
+</div></a>
+
+<nav class="wrapping" aria-label="Navigation öffnen">
+    <div tabindex="0" class="menutop">&#x2630;
+        <ul class="menutop-dropdown">
+            <li><a href="zh_home.html">&#x1F3E0; 主页</a></li>
+            <li><a href="zh_browse.html">&#x1F50D; 浏览</a></li>
+            <li><a href="zh_overview.html">&#x1F4DA; 电子书总览</a></li>
+            <li><a href="zh_artwork.html">&#x1F3A8; 数字艺术</a></li>
+            <li><a href="zh_poetics.html">&#x1F4DD; 诗歌</a></li>
+            <li><a href="zh_support.html">&#127873; 支持</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="menutop toprightone" tabindex="0" aria-label="开放式语言选择">普通话
+  <ul class="menutop-dropdown topright" style="margin-left:5px;">
+      <li><a href="../en/en_3d_graphics.html" title="语言变更为英语">英语</a></li>
+      <li><a href="../de/de_3d_graphics.html" title="语言变更为德语">德语</a></li>
+      <li><a href="#" class="activemenu" onclick="return false;" title="当前语言">普通话</a></li>
+      <li><a href="../es/es_3d_graphics.html" title="语言变更为西班牙语">西班牙</a></li>
+      <li><a href="../ru/ru_3d_graphics.html" title="语言变更为俄语">俄罗斯</a></li>
+      <li><a href="zh_gtranslate.html" title="选择其他语言">更多语言</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="切换光明和黑暗模式。"><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>3D图形概述</h1>
+
+<h2>用Blender 3D创建</h2>
+
+<a href="zh_home.html" class="myButton">回到主页</a>
+<button class="btnmove" onclick='selects()' title="Alle Grafiken mit einem Klick öffnen">打开所有标签</button>
+<button onclick='deSelect()' title="Alle Grafiken mit einem Klick schließen">关闭所有</button>
+
+
+   <main>
+
+<details>
+      <summary id="三维图形1"><span class="poemnr">三维图形 01 -</span> 苹果</summary>
+      <div class="content">
+         <h3 class="graphictitle">苹果</h3>
+         <img loading="lazy" src="../resources/3d/apples.jpg" class="kiblsgraphic" alt="Äpfel"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/apples.jpg" download="Äpfel">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形1</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形2"><span class="poemnr">三维图形 02 -</span> 台球</summary>
+      <div class="content">
+         <h3 class="graphictitle">台球</h3>
+         <img loading="lazy" src="../resources/3d/billiard_balls.jpg" class="kiblsgraphic" alt="Billardkugeln"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/billiard_balls.jpg" download="Billardkugeln">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形2</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形3"><span class="poemnr">三维图形 03 -</span> 彩色铅笔</summary>
+      <div class="content">
+         <h3 class="graphictitle">彩色铅笔</h3>
+         <img loading="lazy" src="../resources/3d/colored_pencils.jpg" class="kiblsgraphic" alt="Buntstifte"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/colored_pencils.jpg" download="Buntstifte">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形3</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形4"><span class="poemnr">三维图形 04 -</span> 彩色的星星</summary>
+      <div class="content">
+         <h3 class="graphictitle">彩色的星星</h3>
+         <img loading="lazy" src="../resources/3d/coloredstar.jpg" class="kiblsgraphic" alt="Bunter Stern"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/coloredstar.jpg" download="Bunter Stern">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形4</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形5"><span class="poemnr">三维图形 05 -</span> 鱼类</summary>
+      <div class="content">
+         <h3 class="graphictitle">鱼类</h3>
+         <img loading="lazy" src="../resources/3d/fish.jpg" class="kiblsgraphic" alt="Fisch"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/fish.jpg" download="Fisch">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形5</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形6"><span class="poemnr">三维图形 06 -</span> 花卉</summary>
+      <div class="content">
+         <h3 class="graphictitle">花卉</h3>
+         <img loading="lazy" src="../resources/3d/flower.jpg" class="kiblsgraphic" alt="花卉"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/flower.jpg" download="花卉.jpg">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形6</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形7"><span class="poemnr">三维图形 07 -</span> 生命之花</summary>
+      <div class="content">
+         <h3 class="graphictitle">生命之花</h3>
+         <img loading="lazy" src="../resources/3d/floweroflife.jpg" class="kiblsgraphic" alt="命之花"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/floweroflife.jpg" download="命之花.jpg">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形7</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形8"><span class="poemnr">三维图形 08 -</span> 桌上足球</summary>
+      <div class="content">
+         <h3 class="graphictitle">桌上足球</h3>
+         <img loading="lazy" src="../resources/3d/foosball.jpg" class="kiblsgraphic" alt="Tischfußball"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/foosball.jpg" download="Tischfußball">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形8</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形9"><span class="poemnr">三维图形 09 -</span> 冰箱</summary>
+      <div class="content">
+         <h3 class="graphictitle">冰箱</h3>
+         <img loading="lazy" src="../resources/3d/fridge.jpg" class="kiblsgraphic" alt="Kühlschrank"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/fridge.jpg" download="Kühlschrank">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形9</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形10"><span class="poemnr">三维图形 10 -</span> 哥布林</summary>
+      <div class="content">
+         <h3 class="graphictitle">哥布林</h3>
+         <img loading="lazy" src="../resources/3d/goblin.jpg" class="kiblsgraphic" alt="Goblin"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/goblin.jpg" download="Goblin">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形10</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形11"><span class="poemnr">三维图形 11 -</span> 游戏机</summary>
+      <div class="content">
+         <h3 class="graphictitle">游戏机</h3>
+         <img loading="lazy" src="../resources/3d/handheld.jpg" class="kiblsgraphic" alt="Spielkonsole"> 
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形11</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形12"><span class="poemnr">三维图形 12 -</span> 宅院</summary>
+      <div class="content">
+         <h3 class="graphictitle">宅院</h3>
+         <img loading="lazy" src="../resources/3d/house.jpg" class="kiblsgraphic" alt="Haus"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/house.jpg" download="Haus">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形12</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形13"><span class="poemnr">三维图形 13 -</span> 冰淇淋</summary>
+      <div class="content">
+         <h3 class="graphictitle">冰淇淋</h3>
+         <img loading="lazy" src="../resources/3d/icecream.jpg" class="kiblsgraphic" alt="Eiscreme"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/icecream.jpg" download="Eiscreme">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形13</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形14"><span class="poemnr">三维图形 14 -</span> 键盘</summary>
+      <div class="content">
+         <h3 class="graphictitle">键盘</h3>
+         <img loading="lazy" src="../resources/3d/keyboard2.jpg" class="kiblsgraphic" alt="Tastatur (2)"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/keyboard2.jpg" download="Tastatur">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形14</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形15"><span class="poemnr">三维图形 15 -</span> 柠檬</summary>
+      <div class="content">
+         <h3 class="graphictitle">柠檬</h3>
+         <img loading="lazy" src="../resources/3d/lemons.jpg" class="kiblsgraphic" alt="Zitronen"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/lemons.jpg" download="Zitronen">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形15</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形16"><span class="poemnr">三维图形 16 -</span> 海</summary>
+      <div class="content">
+         <h3 class="graphictitle">海</h3>
+         <img loading="lazy" src="../resources/3d/ocean.jpg" class="kiblsgraphic" alt="Meer"> 
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形16</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形17"><span class="poemnr">三维图形 17 -</span> 办公椅</summary>
+      <div class="content">
+         <h3 class="graphictitle">办公椅</h3>
+         <img loading="lazy" src="../resources/3d/office_chair.jpg" class="kiblsgraphic" alt="Bürostuhl"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/office_chair.jpg" download="Bürostuhl">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形17</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形18"><span class="poemnr">三维图形 18 -</span> 棋盘游戏</summary>
+      <div class="content">
+         <h3 class="graphictitle">棋盘游戏</h3>
+         <img loading="lazy" src="../resources/3d/parcheesi.jpg" class="kiblsgraphic" alt="Mensch ärgere Dich nicht"> 
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形18</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形19"><span class="poemnr">三维图形 19 -</span> 泡在水里的辣椒</summary>
+      <div class="content">
+         <h3 class="graphictitle">泡在水里的辣椒</h3>
+         <img loading="lazy" src="../resources/3d/Peppers_in_water.jpg" class="kiblsgraphic" alt="Paprikas in Wasser"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/Peppers_in_water.jpg" download="Paprikas in Wasser">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形19</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形20"><span class="poemnr">三维图形 20 -</span> 银戒指</summary>
+      <div class="content">
+         <h3 class="graphictitle">银戒指</h3>
+         <img loading="lazy" src="../resources/3d/ring.jpg" class="kiblsgraphic" alt="Ring"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/ring.jpg" download="Ring">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形20</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形21"><span class="poemnr">三维图形 21 -</span> 罗马天平</summary>
+      <div class="content">
+         <h3 class="graphictitle">罗马天平</h3>
+         <img loading="lazy" src="../resources/3d/roman_scale.jpg" class="kiblsgraphic" alt="Römische Waage"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/roman_scale.jpg" download="Römische Waage">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形21</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形22"><span class="poemnr">三维图形 22 -</span> 头骨</summary>
+      <div class="content">
+         <h3 class="graphictitle">头骨</h3>
+         <img loading="lazy" src="../resources/3d/skullhead.jpg" class="kiblsgraphic" alt="Totenkopf"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/skullhead.jpg" download="Totenkopf">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形22</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形23"><span class="poemnr">三维图形 23 -</span> 摩天大楼</summary>
+      <div class="content">
+         <h3 class="graphictitle">摩天大楼</h3>
+         <img loading="lazy" src="../resources/3d/skyscraper.jpg" class="kiblsgraphic" alt="Wolkenkratzer"> 
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形23</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形24"><span class="poemnr">三维图形 24 -</span> 雪花</summary>
+      <div class="content">
+         <h3 class="graphictitle">雪花</h3>
+         <img loading="lazy" src="../resources/3d/snowflake.jpg" class="kiblsgraphic" alt="Schneeflocke"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/snowflake.jpg" download="Schneeflocke">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形24</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形25"><span class="poemnr">三维图形 25 -</span> 足球</summary>
+      <div class="content">
+         <h3 class="graphictitle">足球</h3>
+         <img loading="lazy" src="../resources/3d/soccer.jpg" class="kiblsgraphic" alt="Fußball"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/soccer.jpg" download="Fußball">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形25</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形26"><span class="poemnr">三维图形 26 -</span> 太空头盔</summary>
+      <div class="content">
+         <h3 class="graphictitle">太空头盔</h3>
+         <img loading="lazy" src="../resources/3d/spacehelmet.jpg" class="kiblsgraphic" alt="Raumfahrt Helm"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/spacehelmet.jpg" download="Raumfahrt Helm">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形26</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形27"><span class="poemnr">三维图形 27 -</span> 宇宙飞船</summary>
+      <div class="content">
+         <h3 class="graphictitle">宇宙飞船</h3>
+         <img loading="lazy" src="../resources/3d/spaceship.jpg" class="kiblsgraphic" alt="Raumschiff"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/spaceship.jpg" download="Raumschiff">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形27</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形28"><span class="poemnr">三维图形 28 -</span> 草莓</summary>
+      <div class="content">
+         <h3 class="graphictitle">草莓</h3>
+         <img loading="lazy" src="../resources/3d/strawberry.jpg" class="kiblsgraphic" alt="Erdbeeren"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/strawberry.jpg" download="Erdbeeren">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形28</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形29"><span class="poemnr">三维图形 29 -</span> 树木 (1)</summary>
+      <div class="content">
+         <h3 class="graphictitle">树木 (1)</h3>
+         <img loading="lazy" src="../resources/3d/tree1.jpg" class="kiblsgraphic" alt="Baum (1)"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/tree1.jpg" download="Baum (1)">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形29</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形30"><span class="poemnr">三维图形 30 -</span> 树木 (2)</summary>
+      <div class="content">
+         <h3 class="graphictitle">树木 (2)</h3>
+         <img loading="lazy" src="../resources/3d/tree2.jpg" class="kiblsgraphic" alt="Baum (2)"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/tree2.jpg" download="Baum (2)">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形30</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形31"><span class="poemnr">三维图形 31 -</span> 病毒</summary>
+      <div class="content">
+         <h3 class="graphictitle">病毒</h3>
+         <img loading="lazy" src="../resources/3d/virus.jpg" class="kiblsgraphic" alt="Virus"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/virus.jpg" download="Virus">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形31</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维图形32"><span class="poemnr">三维图形 32 -</span> 西瓜</summary>
+      <div class="content">
+         <h3 class="graphictitle">西瓜</h3>
+         <img loading="lazy" src="../resources/3d/watermelon.jpg" class="kiblsgraphic" alt="Wassermelone"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer" class="threedlizenz">* 许可证信息</a>
+         相关链接：<br>
+         <div class="tooltip">
+            <a href="../resources/3d/watermelon.jpg" download="Wassermelone">
+               <div class="whitepaper"><span class="tooltiptext">从Neocities下载此文件</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维图形32</div>
+      </div>
+   </details>
+
+<br>
+<h2>三维动画</h2>
+<h2>用Blender 3D创建</h2>
+<button class="btnmove" onclick='selects()' value="Open all Poems">打开所有标签</button>
+<button onclick='deSelect()' value="Close all Poems">关闭所有</button>
+
+   <details>
+      <summary id="三维动画1"><span class="poemnr">三维动画 01 -</span> 墨水滴</summary>
+      <div class="content">
+         <h3 class="graphictitle">墨水滴</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>5 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>55,1 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1F9QhyFg7ydha_NyFkNFLLtnzuG-x5eqg" download="Tinten Tropfen">Tinten Tropfen.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/b9LVbdnhkQg" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画1</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画2"><span class="poemnr">三维动画 02 -</span> 树木</summary>
+      <div class="content">
+         <h3 class="graphictitle">树木</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>3 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>138,3 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1WlrNqPdxFKcTLIUFwAR0P-uloCT2PMGz" download="Baum">Baum.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/2xf3pe-gjic" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画2</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画3"><span class="poemnr">三维动画 03 -</span> 大麻</summary>
+      <div class="content">
+         <h3 class="graphictitle">大麻</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>5 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>651,7 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1WVaYm4oHpDdatPILyuRQaf9HL3wQr1wK" download="Marihuana">Marihuana.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/tThkhTnsysk" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画3</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画4"><span class="poemnr">三维动画 04 -</span> 心脏</summary>
+      <div class="content">
+         <h3 class="graphictitle">心脏</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>4 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>83,6 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1qyDSu-DO9Xn5zt337IQexz9IS1uTImzM" download="Herzen">Herzen.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/HOIgPg2iKAM" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画4</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画5"><span class="poemnr">三维动画 05 -</span> 书页</summary>
+      <div class="content">
+         <h3 class="graphictitle">书页</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>1 Sekunde</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>21,6 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1_0aZfYK8nT2Bxdj2Cx3DoUBiRcSNj4SX" download="Buchseiten">电子诗集seiten.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/qHEbC2AXrDo" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画5</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画6"><span class="poemnr">三维动画 06 -</span> 立方体</summary>
+      <div class="content">
+         <h3 class="graphictitle">立方体</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>4 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>67,7 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1uCIYzLyHQCNc0Xdn7DCjQ68QCsj6fVUF" download="Würfel">Würfel.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/zqnHwEYHMvc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画6</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画7"><span class="poemnr">三维动画 07 -</span> 齿轮</summary>
+      <div class="content">
+         <h3 class="graphictitle">齿轮</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>10 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>159,0 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1Bf4AxVGTQz2qlQE0zWs17lpDEDEf9xXv" download="Zahnräder">Zahnräder.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/ln_WlpNZhAs" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画7</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画8"><span class="poemnr">三维动画 08 -</span> 水</summary>
+      <div class="content">
+         <h3 class="graphictitle">水</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>4 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>277,9 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1pH1hfJw-wNACb3_-TIbN3SE2UtfxdeiK" download="Wasser">Wasser.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/bs4vDGvFMUc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画8</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画9"><span class="poemnr">三维动画 09 -</span> 外星人的头</summary>
+      <div class="content">
+         <h3 class="graphictitle">外星人的头</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>4 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>77,8 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1hEqFonNdcGUWtoNJiv6DaTgUk4nmi0pC" download="Alienkopf">Alienkopf.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/bE4aBMFDVSo" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画9</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="三维动画10"><span class="poemnr">三维动画 10 -</span> 多米诺骨牌石</summary>
+      <div class="content">
+         <h3 class="graphictitle">多米诺骨牌石</h3>
+            <table>
+            <tr>
+               <td>Ersteller: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Dauer: </td>
+               <td>8 Sekunden</td>
+            </tr>
+            <tr>
+               <td>Format: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Größe: </td>
+               <td>81,7 kB</td>
+            </tr>
+            <tr>
+               <td>Lizenz: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.de" target="_blank">CC0 1.0</a> - 没有版权保护</td>
+            </tr>
+            <tr>
+               <td>Herunterladen:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1iMBf0cl8MIOY3V74CuPWDVNx9aVz415P" download="Dominos">Dominos.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/_Z10V5W1fKc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         这个动画是免版税的，不受版权限制。你可以在任何地方自由使用这个动画，而不必提及创作者或提供许可证链接。<br><br>
+         要复制链接到剪贴板，请点击这里：<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/zh/zh_3d_graphics.html#三维动画10</div>
+      </div>
+   </details>
+
+</main>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+        
+<br>
+
+<footer class="contact">2007年KiBLS的诗歌<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="../en/en_info.html" class="contact" style="display:inline-block;">信息/法文</a> - <a href="../en/en_terms.html" class="contact" style="display:inline-block;">条款</a> - <a href="../en/en_privacy.html" class="contact" style="display:inline-block;">隐私政策</a> - <a href="../en/en_contact.html" class="contact" style="display:inline-block;">联系方式</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">知识共享署名-相同方式共享国际许可协议 (CC BY-SA)</a></footer>
+
+<script type="text/javascript" src="../resources/scripts/openclose.js"></script>
+<script type="text/javascript" src="../resources/scripts/zh_copy.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

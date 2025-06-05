@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="ru">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta name="description" content="Откройте для себя разнообразную и пригодную для использования 3D-графику, созданную KiBLS с помощью Blender 3D под лицензией CC BY-SA 4.0.">
+   <meta name="keywords" content="поэзия, стихи, стихотворение, литература, искусство, креативность">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-crossorigin">
+   <title>3D-графика и анимация</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../resources/styles/ru_kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/de/de_3d_graphics">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/es/es_3d_graphics">
+   <link rel="alternate" hreflang="en" href="https://kibls.neocities.org/en/en_3d_graphics">
+   <link rel="alternate" hreflang="zh" href="https://kibls.neocities.org/zh/zh_3d_graphics">
+   <link rel="canonical" href="https://kibls.neocities.org/ru/ru_3d_graphics">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="ru_home.html">Главная &#10148;</a></li>
+    <li><a href="../de/de_artwork.html">Цифровое искусство &#10148;</a></li>
+    <li aria-current="page">3D-графика</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="../resources/scripts/ru/results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; Введите стихи или названия для поиска" title="Введите ключевые слова для поиска">
+  <input type="submit" value="Поиск" id="searchbtn" name="search">
+</form>
+
+<a href="ru_home.html" title="На главную" aria-label="На главную">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/ru_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/ru_chess_white_large.webp" type="image/webp"> 
+  <img src="../resources/chess/ru_chess_white_small.jpg" alt="Шахматная доска">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/ru_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/ru_chess_black_large.webp" type="image/webp"> 
+  <img src="../resources/chess/ru_chess_black_small.jpg" alt="Шахматная доска">
+</picture>
+</div></a>
+
+<nav class="wrapping" aria-label="Открытая навигация">
+    <div tabindex="0" class="menutop">&#x2630;
+        <ul class="menutop-dropdown">
+            <li><a href="ru_home.html">&#x1F3E0; Главная</a></li>
+            <li><a href="ru_browse.html">&#x1F50D; Поиск</a></li>
+            <li><a href="ru_overview.html">&#x1F4DA; Электронные книги</a></li>
+            <li><a href="ru_artwork.html">&#x1F3A8; искусство</a></li>
+            <li><a href="ru_poetics.html">&#x1F4DD; Поэзия</a></li>
+            <li><a href="ru_support.html">&#127873; Поддержка</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav aria-label="Открытый выбор языка" class="menutop toprightone" tabindex="0">Русский
+  <ul class="menutop-dropdown topright" style="margin-left:5px;">
+      <li><a href="../en/en_3d_graphics.html" title="Смена языка на английский">английский</a></li>
+      <li><a href="../de/de_3d_graphics.html" title="Изменение языка на немецкий">немецкий</a></li>
+      <li><a href="../zh/zh_3d_graphics.html" title="Смена языка на китайский">китайский</a></li>
+      <li><a href="../es/es_3d_graphics.html" title="Смена языка на испанский">испанский</a></li>
+      <li><a href="#" class="activemenu" onclick="return false;" title="Активно выбранный язык">Русский</a></li>
+      <li><a href="ru_gtranslate.html" title="Выберите другой язык">Другой</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Переключение светлого и темного режима."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>3D ГРАФИКА</h1>
+
+<h2>Создано с помощью Blender 3D</h2>
+
+<a href="ru_artwork.html" class="myButton">Вернуться к обзору</a>
+<button class="btnmove" onclick='selects()' title="Открывайте все изображения одним щелчком мыши">Открыть все</button>
+<button onclick='deSelect()' title="Закройте все изображения одним щелчком мыши">Закрыть все</button>
+
+
+   <main>
+
+<details>
+      <summary id="графика1"><span class="poemnr">3D-графика 01 -</span> Яблоки</summary>
+      <div class="content">
+         <h3 class="graphictitle">Яблоки</h3>
+         <img loading="lazy" src="../resources/3d/apples.jpg" class="kiblsgraphic" alt="Яблоки"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/apples.jpg" download="Яблоки">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика1</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика2"><span class="poemnr">3D-графика 02 -</span> Бильярдные шары</summary>
+      <div class="content">
+         <h3 class="graphictitle">Бильярдные шары</h3>
+         <img loading="lazy" src="../resources/3d/billiard_balls.jpg" class="kiblsgraphic" alt="Бильярдные шары"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/billiard_balls.jpg" download="Бильярдные шары">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика2</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика3"><span class="poemnr">3D-графика 03 -</span> Цветные карандаши</summary>
+      <div class="content">
+         <h3 class="graphictitle">Цветные карандаши</h3>
+         <img loading="lazy" src="../resources/3d/colored_pencils.jpg" class="kiblsgraphic" alt="Цветные карандаши"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/colored_pencils.jpg" download="Цветные карандаши">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика3</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика4"><span class="poemnr">3D-графика 04 -</span> Разноцветная звезда</summary>
+      <div class="content">
+         <h3 class="graphictitle">Разноцветная звезда</h3>
+         <img loading="lazy" src="../resources/3d/coloredstar.jpg" class="kiblsgraphic" alt="Разноцветная звезда"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/coloredstar.jpg" download="Разноцветная звезда">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика4</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика5"><span class="poemnr">3D-графика 05 -</span> Рыба</summary>
+      <div class="content">
+         <h3 class="graphictitle">Рыба</h3>
+         <img loading="lazy" src="../resources/3d/fish.jpg" class="kiblsgraphic" alt="Рыба"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/fish.jpg" download="Рыба">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика5</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика6"><span class="poemnr">3D-графика 06 -</span> Цветок</summary>
+      <div class="content">
+         <h3 class="graphictitle">Цветок</h3>
+         <img loading="lazy" src="../resources/3d/flower.jpg" class="kiblsgraphic" alt="Цветок"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/flower.jpg" download="Цветок">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика6</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика7"><span class="poemnr">3D-графика 07 -</span> Цветок жизни</summary>
+      <div class="content">
+         <h3 class="graphictitle">Цветок жизни</h3>
+         <img loading="lazy" src="../resources/3d/floweroflife.jpg" class="kiblsgraphic" alt="Цветок жизни"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/floweroflife.jpg" download="Цветок_жизни.jpg">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика7</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика8"><span class="poemnr">3D-графика 08 -</span> Настольный футбол</summary>
+      <div class="content">
+         <h3 class="graphictitle">Настольный футбол</h3>
+         <img loading="lazy" src="../resources/3d/foosball.jpg" class="kiblsgraphic" alt="Настольный футбол"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/foosball.jpg" download="Настольный футбол">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика8</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика9"><span class="poemnr">3D-графика 09 -</span> Холодильник</summary>
+      <div class="content">
+         <h3 class="graphictitle">Холодильник</h3>
+         <img loading="lazy" src="../resources/3d/fridge.jpg" class="kiblsgraphic" alt="Холодильник"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/fridge.jpg" download="Холодильник">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика9</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика10"><span class="poemnr">3D-графика 10 -</span> Гоблин</summary>
+      <div class="content">
+         <h3 class="graphictitle">Гоблин</h3>
+         <img loading="lazy" src="../resources/3d/goblin.jpg" class="kiblsgraphic" alt="Гоблин"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/goblin.jpg" download="Гоблин">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика10</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика11"><span class="poemnr">3D-графика 11 -</span> Игровая приставка</summary>
+      <div class="content">
+         <h3 class="graphictitle">Игровая приставка</h3>
+         <img loading="lazy" src="../resources/3d/handheld.jpg" class="kiblsgraphic" alt="Игровая приставка"> 
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика11</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика12"><span class="poemnr">3D-графика 12 -</span> Дом</summary>
+      <div class="content">
+         <h3 class="graphictitle">Дом</h3>
+         <img loading="lazy" src="../resources/3d/house.jpg" class="kiblsgraphic" alt="Дом"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/house.jpg" download="Дом">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика12</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика13"><span class="poemnr">3D-графика 13 -</span> Мороженое</summary>
+      <div class="content">
+         <h3 class="graphictitle">Мороженое</h3>
+         <img loading="lazy" src="../resources/3d/icecream.jpg" class="kiblsgraphic" alt="Мороженое"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/icecream.jpg" download="Мороженое">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика13</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика14"><span class="poemnr">3D-графика 14 -</span> Клавиатура</summary>
+      <div class="content">
+         <h3 class="graphictitle">Клавиатура</h3>
+         <img loading="lazy" src="../resources/3d/keyboard2.jpg" class="kiblsgraphic" alt="Клавиатура"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/keyboard2.jpg" download="Клавиатура">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика14</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика15"><span class="poemnr">3D-графика 15 -</span> Лимоны</summary>
+      <div class="content">
+         <h3 class="graphictitle">Лимоны</h3>
+         <img loading="lazy" src="../resources/3d/lemons.jpg" class="kiblsgraphic" alt="Лимоны"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/lemons.jpg" download="Лимоны">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика15</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика16"><span class="poemnr">3D-графика 16 -</span> Море</summary>
+      <div class="content">
+         <h3 class="graphictitle">Море</h3>
+         <img loading="lazy" src="../resources/3d/ocean.jpg" class="kiblsgraphic" alt="Море"> 
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика16</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика17"><span class="poemnr">3D-графика 17 -</span> Офисное кресло</summary>
+      <div class="content">
+         <h3 class="graphictitle">Офисное кресло</h3>
+         <img loading="lazy" src="../resources/3d/office_chair.jpg" class="kiblsgraphic" alt="Офисное кресло"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/office_chair.jpg" download="Офисное кресло">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика17</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика18"><span class="poemnr">3D-графика 18 -</span> Настольная игра</summary>
+      <div class="content">
+         <h3 class="graphictitle">Настольная игра</h3>
+         <img loading="lazy" src="../resources/3d/parcheesi.jpg" class="kiblsgraphic" alt="Настольная игра"> 
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика18</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика19"><span class="poemnr">3D-графика 19 -</span> Перец в воде</summary>
+      <div class="content">
+         <h3 class="graphictitle">Перец в воде</h3>
+         <img loading="lazy" src="../resources/3d/Peppers_in_water.jpg" class="kiblsgraphic" alt="Перец в воде"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/Peppers_in_water.jpg" download="Перец в воде">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика19</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика20"><span class="poemnr">3D-графика 20 -</span> Кольцо</summary>
+      <div class="content">
+         <h3 class="graphictitle">Кольцо</h3>
+         <img loading="lazy" src="../resources/3d/ring.jpg" class="kiblsgraphic" alt="Кольцо"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/ring.jpg" download="Кольцо">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика20</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика21"><span class="poemnr">3D-графика 21 -</span> Римские весы</summary>
+      <div class="content">
+         <h3 class="graphictitle">Римские весы</h3>
+         <img loading="lazy" src="../resources/3d/roman_scale.jpg" class="kiblsgraphic" alt="Римские весы"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/roman_scale.jpg" download="Римские весы">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика21</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика22"><span class="poemnr">3D-графика 22 -</span> Череп</summary>
+      <div class="content">
+         <h3 class="graphictitle">Череп</h3>
+         <img loading="lazy" src="../resources/3d/skullhead.jpg" class="kiblsgraphic" alt="Череп"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/skullhead.jpg" download="Череп">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика22</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика23"><span class="poemnr">3D-графика 23 -</span> Небоскребы</summary>
+      <div class="content">
+         <h3 class="graphictitle">Небоскребы</h3>
+         <img loading="lazy" src="../resources/3d/skyscraper.jpg" class="kiblsgraphic" alt="Небоскребы"> 
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика23</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика24"><span class="poemnr">3D-графика 24 -</span> Снежинка</summary>
+      <div class="content">
+         <h3 class="graphictitle">Снежинка</h3>
+         <img loading="lazy" src="../resources/3d/snowflake.jpg" class="kiblsgraphic" alt="Снежинка"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/snowflake.jpg" download="Снежинка">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика24</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика25"><span class="poemnr">3D-графика 25 -</span> Футбол</summary>
+      <div class="content">
+         <h3 class="graphictitle">Футбол</h3>
+         <img loading="lazy" src="../resources/3d/soccer.jpg" class="kiblsgraphic" alt="Футбол"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/soccer.jpg" download="Футбол">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика25</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика26"><span class="poemnr">3D-графика 26 -</span> Космический шлем</summary>
+      <div class="content">
+         <h3 class="graphictitle">Космический шлем</h3>
+         <img loading="lazy" src="../resources/3d/spacehelmet.jpg" class="kiblsgraphic" alt="Космический шлем"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/spacehelmet.jpg" download="Космический шлем">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика26</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика27"><span class="poemnr">3D-графика 27 -</span> Космический корабль</summary>
+      <div class="content">
+         <h3 class="graphictitle">Космический корабль</h3>
+         <img loading="lazy" src="../resources/3d/spaceship.jpg" class="kiblsgraphic" alt="Космический корабль"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/spaceship.jpg" download="Космический корабль">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика27</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика28"><span class="poemnr">3D-графика 28 -</span> Клубника</summary>
+      <div class="content">
+         <h3 class="graphictitle">Клубника</h3>
+         <img loading="lazy" src="../resources/3d/strawberry.jpg" class="kiblsgraphic" alt="Клубника"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/strawberry.jpg" download="Клубника">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика28</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика29"><span class="poemnr">3D-графика 29 -</span> Дерево (1)</summary>
+      <div class="content">
+         <h3 class="graphictitle">Дерево (1)</h3>
+         <img loading="lazy" src="../resources/3d/tree1.jpg" class="kiblsgraphic" alt="Дерево (1)"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/tree1.jpg" download="Дерево (1)">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика29</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика30"><span class="poemnr">3D-графика 30 -</span> Дерево (2)</summary>
+      <div class="content">
+         <h3 class="graphictitle">Дерево (2)</h3>
+         <img loading="lazy" src="../resources/3d/tree2.jpg" class="kiblsgraphic" alt="Дерево (2)"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/tree2.jpg" download="Дерево (2)">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика30</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика31"><span class="poemnr">3D-графика 31 -</span> Вирус</summary>
+      <div class="content">
+         <h3 class="graphictitle">Вирус</h3>
+         <img loading="lazy" src="../resources/3d/virus.jpg" class="kiblsgraphic" alt="Вирус"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/virus.jpg" download="Вирус">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика31</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="графика32"><span class="poemnr">3D-графика 32 -</span> Арбуз</summary>
+      <div class="content">
+         <h3 class="graphictitle">Арбуз</h3>
+         <img loading="lazy" src="../resources/3d/watermelon.jpg" class="kiblsgraphic" alt="Арбуз"> 
+         <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.rudeed.ru" target="_blank" rel="noopener noreferrer" class="threedlizenz">* Информация о лицензии</a>
+         Похожие ссылки:<br>
+         <div class="tooltip">
+            <a href="../resources/3d/watermelon.jpg" download="Арбуз">
+               <div class="whitepaper"><span class="tooltiptext">Скачайте эту 3D-графику с сайта Neocities</span>JPG</div>
+            </a>
+         </div>
+         <br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#графика32</div>
+      </div>
+   </details>
+
+<br>
+<h2>3D-анимация</h2>
+<h2>Создано с помощью Blender 3D</h2>
+<button class="btnmove" onclick='selects()' value="Open all Poems">Открыть все</button>
+<button onclick='deSelect()' value="Close all Poems">Закрыть все</button>
+
+   <details>
+      <summary id="анимация1"><span class="poemnr">3D-анимация 01 -</span> Капли чернил</summary>
+      <div class="content">
+         <h3 class="graphictitle">Капли чернил</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>5 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>55,1 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1F9QhyFg7ydha_NyFkNFLLtnzuG-x5eqg" download="Tinten Tropfen">Tinten Tropfen.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/b9LVbdnhkQg" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация1</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация2"><span class="poemnr">3D-анимация 02 -</span> Дерево</summary>
+      <div class="content">
+         <h3 class="graphictitle">Дерево</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>3 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>138,3 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1WlrNqPdxFKcTLIUFwAR0P-uloCT2PMGz" download="Baum">Baum.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/2xf3pe-gjic" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация2</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация3"><span class="poemnr">3D-анимация 03 -</span> Марихуана</summary>
+      <div class="content">
+         <h3 class="graphictitle">Марихуана</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>5 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>651,7 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1WVaYm4oHpDdatPILyuRQaf9HL3wQr1wK" download="Marihuana">Marihuana.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/tThkhTnsysk" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация3</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация4"><span class="poemnr">3D-анимация 04 -</span> Сердца</summary>
+      <div class="content">
+         <h3 class="graphictitle">Сердца</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>4 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>83,6 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1qyDSu-DO9Xn5zt337IQexz9IS1uTImzM" download="Herzen">Herzen.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/HOIgPg2iKAM" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация4</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация5"><span class="poemnr">3D-анимация 05 -</span> Страницы книги</summary>
+      <div class="content">
+         <h3 class="graphictitle">Страницы книги</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>1 Sekunde</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>21,6 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1_0aZfYK8nT2Bxdj2Cx3DoUBiRcSNj4SX" download="Buchseiten">книгаseiten.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/qHEbC2AXrDo" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация5</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация6"><span class="poemnr">3D-анимация 06 -</span> Куб</summary>
+      <div class="content">
+         <h3 class="graphictitle">Куб</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>4 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>67,7 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1uCIYzLyHQCNc0Xdn7DCjQ68QCsj6fVUF" download="Würfel">Würfel.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/zqnHwEYHMvc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация6</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация7"><span class="poemnr">3D-анимация 07 -</span> Шестерни</summary>
+      <div class="content">
+         <h3 class="graphictitle">Шестерни</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>10 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>159,0 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1Bf4AxVGTQz2qlQE0zWs17lpDEDEf9xXv" download="Zahnräder">Zahnräder.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/ln_WlpNZhAs" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация7</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация8"><span class="poemnr">3D-анимация 08 -</span> Вода</summary>
+      <div class="content">
+         <h3 class="graphictitle">Вода</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>4 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>277,9 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1pH1hfJw-wNACb3_-TIbN3SE2UtfxdeiK" download="Wasser">Wasser.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/bs4vDGvFMUc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация8</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация9"><span class="poemnr">3D-анимация 09 -</span> Голова пришельца</summary>
+      <div class="content">
+         <h3 class="graphictitle">Голова пришельца</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>4 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>77,8 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1hEqFonNdcGUWtoNJiv6DaTgUk4nmi0pC" download="Alienkopf">Alienkopf.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/bE4aBMFDVSo" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация9</div>
+      </div>
+   </details>
+
+
+   <details>
+      <summary id="анимация10"><span class="poemnr">3D-анимация 10 -</span> Доминос</summary>
+      <div class="content">
+         <h3 class="graphictitle">Доминос</h3>
+         
+         <table>
+            <tr>
+               <td>Создатель: </td>
+               <td>KiBLS</td>
+            </tr>
+            <tr>
+               <td>Продолжительность: </td>
+               <td>8 Секунды</td>
+            </tr>
+            <tr>
+               <td>Формат: </td>
+               <td>.mp4</td>
+            </tr>
+            <tr>
+               <td>Размер: </td>
+               <td>81,7 kB</td>
+            </tr>
+            <tr>
+               <td>Лицензия: </td>
+               <td><a class="licence" href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank">CC0 1.0</a> - Нет защиты авторских прав</td>
+            </tr>
+            <tr>
+               <td>Скачать:</td>
+               <td> <a href="https://drive.google.com/uc?export=download&amp;id=1iMBf0cl8MIOY3V74CuPWDVNx9aVz415P" download="Dominos">Dominos.mp4</a></td>
+            </tr>
+         </table>
+         <br>
+         <iframe width="100%" height="300" src="https://www.youtube.com/embed/_Z10V5W1fKc" frameborder="0" allowfullscreen></iframe>
+         <br><br>
+         Эта анимация является безвозмездной и не является объектом авторского права. Вы можете свободно использовать эту анимацию везде, где захотите, не указывая создателя и не предоставляя ссылку на лицензию.<br><br>
+         Чтобы скопировать ссылку в буфер обмена, нажмите здесь:<br>
+         <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/ru/ru_3d_graphics.html#анимация10</div>
+      </div>
+   </details>
+
+</main>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+        
+<br>
+
+<footer class="contact">KiBLS Поэзия 2007<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="../en/en_info.html" class="contact" style="display:inline-block;">Информация/Фак</a> - <a href="../en/en_terms.html" class="contact" style="display:inline-block;">Условия</a> - <a href="../en/en_privacy.html" class="contact" style="display:inline-block;">Конфиденциальность</a> - <a href="../en/en_contact.html" class="contact" style="display:inline-block;">Связаться</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">Атрибуция - совместное использование на тех же условиях<br> 4.0 Международный (CC BY-SA 4.0)</a></footer>
+
+<script type="text/javascript" src="../resources/scripts/ru_openclose.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

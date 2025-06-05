@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta content="这里是你诗歌搜索的结果。" name="description">
+   <meta content="诗歌, 诗集, 诗, 文学, 艺术, 创造力" name="keywords">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-crossorigin">
+   <title>搜索结果</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../../../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../../../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../../../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../../../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../../../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../../styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="en" href="https://kibls.neocities.org/resources/scripts/en/results">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/resources/scripts/es/results">
+   <link rel="alternate" hreflang="ru" href="https://kibls.neocities.org/resources/scripts/ru/results">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/resources/scripts/de/results">
+   <link href="https://kibls.neocities.org/resources/scripts/zh/results" rel="canonical">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     form {
+	display: none;
+     }
+     .mybutton {
+	display: none;
+     }
+     #search {
+	display: none;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="../../../zh/zh_home.html">主页 &#10148;</a></li>
+    <li><a href="javascript:history.back()">上一页 &#10148;</a></li>
+    <li aria-current="page">搜索结果</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; 请输入要搜索的诗句或标题" title="请输入要搜索的诗句或标题">
+  <input type="submit" value="搜索" id="searchbtn" name="search">
+</form>
+
+<a href="../../../zh/zh_home.html" title="回到主页" aria-label="回到主页">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../../chess/zh_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../../chess/zh_chess_white_large.webp" type="image/webp"> 
+  <img src="../../chess/zh_chess_white_small.jpg" alt="棋盘">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../../chess/zh_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../../chess/zh_chess_black_large.webp" type="image/webp"> 
+  <img src="../../chess/zh_chess_black_small.jpg" alt="棋盘">
+</picture>
+</div></a>
+
+<nav class="wrapping" aria-label="Navigation öffnen">
+    <div tabindex="0" class="menutop">&#x2630; 菜单
+        <ul class="menutop-dropdown">
+            <li><a href="../../../zh/zh_home.html">&#x1F3E0; 主页</a></li>
+            <li><a href="../../../zh/zh_browse.html">&#x1F50D; 浏览</a></li>
+            <li><a href="../../../zh/zh_overview.html">&#x1F4DA; 电子书总览</a></li>
+            <li><a href="../../../zh/zh_artwork.html">&#x1F3A8; 数字艺术</a></li>
+            <li><a href="../../../zh/zh_poetics.html">&#x1F4DD; 诗歌</a></li>
+            <li><a href="../../../zh/zh_support.html">&#x1F4B0; 支持</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav aria-label="Sprachauswahl öffnen" class="menutop toprightone" tabindex="0" style="height:25px;">普通话
+  <ul class="menutop-dropdown topright" style="margin-left:5px;">
+      <li><a href="../en/results.html" title="语言变更为英语">英语</a></li>
+      <li><a href="../de/results.html" title="语言变更为德语">德语</a></li>
+      <li><a href="#" class="activemenu" onclick="return false;" title="当前语言">普通话</a></li>
+      <li><a href="../es/results.html" title="语言变更为西班牙语">西班牙</a></li>
+      <li><a href="../ru/results.html" title="语言变更为俄语">俄罗斯</a></li>
+      <li><a href="../../../zh/zh_gtranslate.html" title="选择其他语言">更多语言</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Toggle light and dark mode."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>搜索结果</h1>
+
+<h2>在这里，你可以过滤所有的诗词</h2>
+
+<a href="javascript:history.back()" class="myButton">转到上一个网站</a>
+
+<main>
+
+<div id="app"></div>
+
+</main>
+
+<br>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+
+<footer class="contact">2007年KiBLS的诗歌<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">知识共享署名-相同方式共享国际许可协议 (CC BY-SA)</a></footer>
+
+<script type="text/javascript" src="../openclose.js"></script>
+<script type="text/javascript" src="searchengine.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

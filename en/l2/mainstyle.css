@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-family: KiBLS_Font_Official, sans-serif;
+	background-image: radial-gradient(ellipse at center, #9fdadf 0%, #9fbadf 100%);
+	animation: 0.55s 1 fadein;
+	opacity: 0;
+}
+@keyframes fadein {
+	0%      { opacity: 0; }
+	100%    { opacity: 1; }
+}
+body {
+	opacity: 1;
+}
+@font-face {
+	font-family:"KiBLS_Font_Official";
+	src:	url(../../resources/Fonts/KiBLS_Font_Official.woff2)format("woff2"),
+		url(../../resources/Fonts/KiBLS_Font_Official.woff)format("woff"),
+		url(../../resources/Fonts/KiBLS_Font_Official.ttf) format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "KiBLS_Chess_Font";
+	src: 	url(../../resources/Fonts/KiBLS_Chess_Font.woff2) format("woff2"),
+		url(../../resources/Fonts/KiBLS_Chess_Font.woff) format("woff"),
+		url(../../resources/Fonts/KiBLS_Chess_Font.ttf) format("truetype");
+	font-display: swap;
+}
+#main-content {
+	margin: 2.5em auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+h1 {
+	width: 100%;
+	margin: 0 auto 0.5em;
+	font-size: 30px;
+	text-align: center;
+}
+h2 {
+	color: #fff;
+	font-family: KiBLS_Chess_Font, sans-serif;
+	font-size: 18px;
+}
+img {
+	margin: 8px auto 0px auto;
+	width: 90%;
+	height: auto;
+	opacity: 0.95;
+}
+.wrapper {
+	max-width: calc(100% / 4);
+	min-width: 10em;
+	margin: 20px;
+	cursor: pointer;
+}
+.book {
+	height: 250px;
+	width: 175px;
+	position: relative;
+	transition: 0.4s ease-in-out;
+	transform-origin: left center 0px;
+	display: inline-block;
+	perspective: 800px;
+}
+.book:hover {
+	transform: rotateZ(-8deg);
+}
+.book:hover .book__cover {
+	transform: rotateY(-40deg);
+	z-index: 999;
+	box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.2);
+}
+.book__cover {
+	height: 250px;
+	width: 175px;
+	position: absolute;
+	border-radius: 1px 2px 2px 1px;
+	box-shadow: 0 0 5px 1.5px rgba(0, 0, 0, 0.25);
+	z-index: 10;
+	transition: 0.5s linear;
+	transform-style: preserve-3d;
+	transform-origin: left center 0px;
+	background-image: 
+		linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), 
+		linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), 
+		linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+	background-size: 4px 4px, 4px 4px, 4px 2px;
+	background-color: #800000;
+}
+.book__detail {
+	background-color: rgba(51, 51, 51, 0.8);
+	margin-top: 185px;
+	padding: 15px;
+	font-size: 12px;
+	font-weight: 800;
+	position: relative;
+	z-index: 10;
+	color: #fff;
+	text-align: left;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.book__page {
+	height: 100%;
+	width: 175px;
+	position: absolute;
+	background-color: #fbfae8;
+	z-index: 0;
+	box-shadow: 0 0 5px 1.5px rgba(0, 0, 0, 0.25);
+	border-radius: 1px 2px 2px 1px;
+	overflow: hidden;
+}
+
+#container {
+	width: 100%;
+	height: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+}
+.box {
+	height: 10px;
+	padding: 0px 10px 40px 10px;
+	text-align: center;
+	cursor: pointer;
+}
+#lbtn { 
+	font-family: KiBLS_Chess_Font, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	background: #121212;
+	border: 2px solid #121212;
+	border-radius: 5px;
+	color: white; 
+}
+#lbtn:hover { 
+	background: #f0f0f0;
+	border: 2px solid #121212;
+	color: black; 
+}
+#container a {
+	color: white;
+	text-decoration: none;
+}
+#main-content {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}

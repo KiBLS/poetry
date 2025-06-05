@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta name="description" content="Discover various and usable 3D graphics created by KiBLS with Blender 3D under the CC BY-SA 4.0 license.">
+   <meta name="keywords" content="poetry, poems, poem, literature, art, creativity">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-cross-origin">
+   <title>3D Graphics Overview</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../resources/styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/de/de_3d_graphics">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/es/es_3d_graphics">
+   <link rel="alternate" hreflang="ru" href="https://kibls.neocities.org/ru/ru_3d_graphics">
+   <link rel="alternate" hreflang="zh" href="https://kibls.neocities.org/zh/zh_3d_graphics">
+   <link rel="canonical" href="https://kibls.neocities.org/en/en_3d_graphics">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     #search {
+	display: none;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="en_home.html">Home &#10148;</a></li>
+    <li><a href="en_artwork.html">Digital artwork &#10148;</a></li>
+    <li aria-current="page">3D artwork</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="../resources/scripts/en/results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; Enter verses or title to search for" title="Enter search keywords">
+  <input type="submit" value="Search" id="searchbtn" name="search">
+</form>
+
+<a href="en_home.html" title="Back to main page" aria-label="Back to main page">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_white_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_white_small.jpg" alt="Chessboard">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_black_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_black_small.jpg" alt="Chessboard">
+</picture>
+</div></a>
+
+<nav class="wrapping"><a href="en_graphics6.html"><div class="menutop" title="Previous Part">&#8249;&#8249;&#8249;</div></a></nav>
+
+<nav class="wrapping" style="float:right; margin-left:5px;"><a href="en_3d_animations.html"><div class="menutop" title="Next Part">&#8250;&#8250;&#8250;</div></a></nav>
+
+<nav class="wrapping" style="margin-left:5px;" aria-label="Open navigation">
+    <div tabindex="0" class="menutop">&#x2630;
+        <ul class="menutop-dropdown">
+            <li><a href="en_home.html">&#x1F3E0; Home</a></li>
+            <li><a href="en_browse.html">&#x1F50D; Browse</a></li>
+            <li><a href="en_overview.html">&#x1F4DA; E-book overview</a></li>
+            <li><a href="en_artwork.html">&#x1F3A8; Digital Artwork</a></li>
+            <li><a href="en_poetics.html">&#x1F4DD; Poetics</a></li>
+            <li><a href="en_support.html">&#127873; Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="menutop toprightone" tabindex="0" aria-label="Open language selection" style="padding:6px;">English
+  <ul class="menutop-dropdown topright">
+      <li><a href="#" class="activemenu" onclick="return false;" title="Actively selected language">English</a></li>
+      <li><a href="../de/de_3d_graphics.html" title="Change language to German">German</a></li>
+      <li><a href="../zh/zh_3d_graphics.html" title="Change language to Chinese">Chinese</a></li>
+      <li><a href="../es/es_3d_graphics.html" title="Change language to Espanol">Spanish</a></li>
+      <li><a href="../ru/ru_3d_graphics.html" title="Change language to Russian">Russian</a></li>
+      <li><a href="en_gtranslate.html" title="Select another language">Other</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Toggle light and dark mode."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>3D ARTWORK</h1>
+
+<h2>Created with Blender 3D</h2>
+
+<a href="en_artwork.html" class="myButton">Back to the overview</a>
+
+<button class="btnmove" onclick='selects()' title="Open all graphics with one click">Open all</button>
+<button onclick='deSelect()' title="Close all graphics with one click">Close all</button>
+
+
+    <main>
+
+<details>
+        <summary id="graphic1"><span class="poemnr">3D Graphic 01 -</span> Apples</summary>
+        <div class="content">
+         <h3 class="graphictitle">Apples</h3>
+         <img loading="lazy" src="../resources/3d/apples.jpg" class="kiblsgraphic" alt="Apples"> 
+            <div class="tooltip">
+                <a href="../resources/3d/apples.jpg" download="Apples.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic1</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic2"><span class="poemnr">3D Graphic 02 -</span> Billiard Balls</summary>
+        <div class="content">
+         <h3 class="graphictitle">Billiard Balls</h3>
+         <img loading="lazy" src="../resources/3d/billiard_balls.jpg" class="kiblsgraphic" alt="Billiard Balls"> 
+            <div class="tooltip">
+                <a href="../resources/3d/billiard_balls.jpg" download="Billiard_Balls.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic2</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic3"><span class="poemnr">3D Graphic 03 -</span> Colored Pencils</summary>
+        <div class="content">
+         <h3 class="graphictitle">Colored Pencils</h3>
+         <img loading="lazy" src="../resources/3d/colored_pencils.jpg" class="kiblsgraphic" alt="Colored Pencils"> 
+            <div class="tooltip">
+                <a href="../resources/3d/colored_pencils.jpg" download="Colored_Pencils.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic3</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic4"><span class="poemnr">3D Graphic 04 -</span> Colored Star</summary>
+        <div class="content">
+         <h3 class="graphictitle">Colored Star</h3>
+         <img loading="lazy" src="../resources/3d/coloredstar.jpg" class="kiblsgraphic" alt="Colored Star"> 
+            <div class="tooltip">
+                <a href="../resources/3d/coloredstar.jpg" download="Colored_Star.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic4</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic5"><span class="poemnr">3D Graphic 05 -</span> Fish</summary>
+        <div class="content">
+         <h3 class="graphictitle">Fish</h3>
+         <img loading="lazy" src="../resources/3d/fish.jpg" class="kiblsgraphic" alt="Fish"> 
+            <div class="tooltip">
+                <a href="../resources/3d/fish.jpg" download="Fish.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic5</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic6"><span class="poemnr">3D Graphic 06 -</span> Flower</summary>
+        <div class="content">
+         <h3 class="graphictitle">Flower</h3>
+         <img loading="lazy" src="../resources/3d/flower.jpg" class="kiblsgraphic" alt="Flower"> 
+            <div class="tooltip">
+                <a href="../resources/3d/flower.jpg" download="Flower.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic6</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic7"><span class="poemnr">3D Graphic 07 -</span> Flower of Life</summary>
+        <div class="content">
+         <h3 class="graphictitle">Flower of Life</h3>
+         <img loading="lazy" src="../resources/3d/floweroflife.jpg" class="kiblsgraphic" alt="Flower of Life"> 
+            <div class="tooltip">
+                <a href="../resources/3d/floweroflife.jpg" download="Flower_of_Life.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic7</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic8"><span class="poemnr">3D Graphic 08 -</span> Foosball</summary>
+        <div class="content">
+         <h3 class="graphictitle">Foosball</h3>
+         <img loading="lazy" src="../resources/3d/foosball.jpg" class="kiblsgraphic" alt="Foosball"> 
+            <div class="tooltip">
+                <a href="../resources/3d/foosball.jpg" download="Foosball.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic8</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic9"><span class="poemnr">3D Graphic 09 -</span> Fridge</summary>
+        <div class="content">
+         <h3 class="graphictitle">Fridge</h3>
+         <img loading="lazy" src="../resources/3d/fridge.jpg" class="kiblsgraphic" alt="Fridge"> 
+            <div class="tooltip">
+                <a href="../resources/3d/fridge.jpg" download="Fridge.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic9</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic10"><span class="poemnr">3D Graphic 10 -</span> Goblin</summary>
+        <div class="content">
+         <h3 class="graphictitle">Goblin</h3>
+         <img loading="lazy" src="../resources/3d/goblin.jpg" class="kiblsgraphic" alt="Goblin"> 
+            <div class="tooltip">
+                <a href="../resources/3d/goblin.jpg" download="Goblin.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic10</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic11"><span class="poemnr">3D Graphic 11 -</span> Handheld</summary>
+        <div class="content">
+         <h3 class="graphictitle">Handheld</h3>
+         <img loading="lazy" src="../resources/3d/handheld.jpg" class="kiblsgraphic" alt="Handheld"> 
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic11</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic12"><span class="poemnr">3D Graphic 12 -</span> House</summary>
+        <div class="content">
+         <h3 class="graphictitle">House</h3>
+         <img loading="lazy" src="../resources/3d/house.jpg" class="kiblsgraphic" alt="House"> 
+            <div class="tooltip">
+                <a href="../resources/3d/house.jpg" download="House.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic12</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic13"><span class="poemnr">3D Graphic 13 -</span> Ice Cream</summary>
+        <div class="content">
+         <h3 class="graphictitle">Ice Cream</h3>
+         <img loading="lazy" src="../resources/3d/icecream.jpg" class="kiblsgraphic" alt="Ice Cream"> 
+            <div class="tooltip">
+                <a href="../resources/3d/icecream.jpg" download="Ice_Cream.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic13</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic14"><span class="poemnr">3D Graphic 14 -</span> Keyboard</summary>
+        <div class="content">
+         <h3 class="graphictitle">Keyboard</h3>
+         <img loading="lazy" src="../resources/3d/keyboard2.jpg" class="kiblsgraphic" alt="Keyboard (2)"> 
+            <div class="tooltip">
+                <a href="../resources/3d/keyboard2.jpg" download="Keyboard.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic14</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic15"><span class="poemnr">3D Graphic 15 -</span> Lemons</summary>
+        <div class="content">
+         <h3 class="graphictitle">Lemons</h3>
+         <img loading="lazy" src="../resources/3d/lemons.jpg" class="kiblsgraphic" alt="Lemons"> 
+            <div class="tooltip">
+                <a href="../resources/3d/lemons.jpg" download="Lemons.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic15</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic16"><span class="poemnr">3D Graphic 16 -</span> Ocean</summary>
+        <div class="content">
+         <h3 class="graphictitle">Ocean</h3>
+         <img loading="lazy" src="../resources/3d/ocean.jpg" class="kiblsgraphic" alt="Ocean"> 
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic16</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic17"><span class="poemnr">3D Graphic 17 -</span> Office Chair</summary>
+        <div class="content">
+         <h3 class="graphictitle">Office Chair</h3>
+         <img loading="lazy" src="../resources/3d/office_chair.jpg" class="kiblsgraphic" alt="Office Chair"> 
+            <div class="tooltip">
+                <a href="../resources/3d/office_chair.jpg" download="Office_Chair.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic17</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic18"><span class="poemnr">3D Graphic 18 -</span> Parcheesi</summary>
+        <div class="content">
+         <h3 class="graphictitle">Parcheesi</h3>
+         <img loading="lazy" src="../resources/3d/parcheesi.jpg" class="kiblsgraphic" alt="Parcheesi"> 
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic18</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic19"><span class="poemnr">3D Graphic 19 -</span> Peppers in Water</summary>
+        <div class="content">
+         <h3 class="graphictitle">Peppers in Water</h3>
+         <img loading="lazy" src="../resources/3d/Peppers_in_water.jpg" class="kiblsgraphic" alt="Peppers in Water"> 
+            <div class="tooltip">
+                <a href="../resources/3d/Peppers_in_water.jpg" download="Peppers_in_Water.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic19</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic20"><span class="poemnr">3D Graphic 20 -</span> Ring</summary>
+        <div class="content">
+         <h3 class="graphictitle">Ring</h3>
+         <img loading="lazy" src="../resources/3d/ring.jpg" class="kiblsgraphic" alt="Ring"> 
+            <div class="tooltip">
+                <a href="../resources/3d/ring.jpg" download="Ring.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic20</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic21"><span class="poemnr">3D Graphic 21 -</span> Roman Scale</summary>
+        <div class="content">
+         <h3 class="graphictitle">Roman Scale</h3>
+         <img loading="lazy" src="../resources/3d/roman_scale.jpg" class="kiblsgraphic" alt="Roman Scale"> 
+            <div class="tooltip">
+                <a href="../resources/3d/roman_scale.jpg" download="Roman_Scale.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic21</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic22"><span class="poemnr">3D Graphic 22 -</span> Skull Head</summary>
+        <div class="content">
+         <h3 class="graphictitle">Skull Head</h3>
+         <img loading="lazy" src="../resources/3d/skullhead.jpg" class="kiblsgraphic" alt="Skull Head"> 
+            <div class="tooltip">
+                <a href="../resources/3d/skullhead.jpg" download="Skull_Head.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic22</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic23"><span class="poemnr">3D Graphic 23 -</span> Skyscraper</summary>
+        <div class="content">
+         <h3 class="graphictitle">Skyscraper</h3>
+         <img loading="lazy" src="../resources/3d/skyscraper.jpg" class="kiblsgraphic" alt="Skyscraper"> 
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic23</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic24"><span class="poemnr">3D Graphic 24 -</span> Snowflake</summary>
+        <div class="content">
+         <h3 class="graphictitle">Snowflake</h3>
+         <img loading="lazy" src="../resources/3d/snowflake.jpg" class="kiblsgraphic" alt="Snowflake"> 
+            <div class="tooltip">
+                <a href="../resources/3d/snowflake.jpg" download="Snowflake.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic24</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic25"><span class="poemnr">3D Graphic 25 -</span> Soccer Ball</summary>
+        <div class="content">
+         <h3 class="graphictitle">Soccer Ball</h3>
+         <img loading="lazy" src="../resources/3d/soccer.jpg" class="kiblsgraphic" alt="Soccer Ball"> 
+            <div class="tooltip">
+                <a href="../resources/3d/soccer.jpg" download="Soccer_Ball.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic25</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic26"><span class="poemnr">3D Graphic 26 -</span> Space Helmet</summary>
+        <div class="content">
+         <h3 class="graphictitle">Space Helmet</h3>
+         <img loading="lazy" src="../resources/3d/spacehelmet.jpg" class="kiblsgraphic" alt="Space Helmet"> 
+            <div class="tooltip">
+                <a href="../resources/3d/spacehelmet.jpg" download="Space_Helmet.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic26</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic27"><span class="poemnr">3D Graphic 27 -</span> Spaceship</summary>
+        <div class="content">
+         <h3 class="graphictitle">Spaceship</h3>
+         <img loading="lazy" src="../resources/3d/spaceship.jpg" class="kiblsgraphic" alt="Spaceship"> 
+            <div class="tooltip">
+                <a href="../resources/3d/spaceship.jpg" download="Spaceship.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic27</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic28"><span class="poemnr">3D Graphic 28 -</span> Strawberries</summary>
+        <div class="content">
+         <h3 class="graphictitle">Strawberries</h3>
+         <img loading="lazy" src="../resources/3d/strawberry.jpg" class="kiblsgraphic" alt="Strawberries"> 
+            <div class="tooltip">
+                <a href="../resources/3d/strawberry.jpg" download="Strawberries.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic28</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic29"><span class="poemnr">3D Graphic 29 -</span> Tree (1)</summary>
+        <div class="content">
+         <h3 class="graphictitle">Tree (1)</h3>
+         <img loading="lazy" src="../resources/3d/tree1.jpg" class="kiblsgraphic" alt="Tree (1)"> 
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic29</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic30"><span class="poemnr">3D Graphic 30 -</span> Tree (2)</summary>
+        <div class="content">
+         <h3 class="graphictitle">Tree (2)</h3>
+         <img loading="lazy" src="../resources/3d/tree2.jpg" class="kiblsgraphic" alt="Tree (2)"> 
+            <div class="tooltip">
+                <a href="../resources/3d/tree2.jpg" download="Tree (2).jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic30</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic31"><span class="poemnr">3D Graphic 31 -</span> Virus</summary>
+        <div class="content">
+         <h3 class="graphictitle">Virus</h3>
+         <img loading="lazy" src="../resources/3d/virus.jpg" class="kiblsgraphic" alt="Virus"> 
+            <div class="tooltip">
+                <a href="../resources/3d/virus.jpg" download="Virus.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic31</div>
+        </div>
+    </details>
+
+
+    <details>
+        <summary id="graphic32"><span class="poemnr">3D Graphic 32 -</span> Watermelon</summary>
+        <div class="content">
+         <h3 class="graphictitle">Watermelon</h3>
+         <img loading="lazy" src="../resources/3d/watermelon.jpg" class="kiblsgraphic" alt="Watermelon"> 
+            <div class="tooltip">
+                <a href="../resources/3d/watermelon.jpg" download="Watermelon.jpg">
+                    <div class="whitepaper"><span class="tooltiptext">Download this<br>3D Graphic</span>JPG</div>
+                </a>
+            </div>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" class="threedlizenz">* License information</a>
+            <br>
+            Click to copy the link to this 3D Graphic to your clipboard:<br>
+            <div class="plink" onclick="copyDivToClipboard(this);">https://kibls.neocities.org/en/en_3d_graphics.html#graphic32</div>
+        </div>
+    </details>
+
+</main>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+
+<br>
+
+<footer class="contact">KiBLS Poetry 2007<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="en_info.html" class="contact" style="display:inline-block;">Info/Faq</a> - <a href="en_terms.html" class="contact" style="display:inline-block;">Terms</a> - <a href="en_privacy.html" class="contact" style="display:inline-block;">Privacy</a> - <a href="en_contact.html" class="contact" style="display:inline-block;">Contact</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></footer>
+
+<script type="text/javascript" src="../resources/scripts/openclose.js"></script>
+<script type="text/javascript" src="../resources/scripts/en_copy.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

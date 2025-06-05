@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta name="description" content="Here you can find the possibility to translate the website into all possible languages with the help of Google Translate.">
+   <meta name="keywords" content="poetry, poems, poem, literature, art, creativity">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-crossorigin">
+   <title>KiBLS Poetry Collection</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../resources/styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/de/de_gtranslate">
+   <link rel="alternate" hreflang="es" href="https://kibls.neocities.org/es/es_gtranslate">
+   <link rel="alternate" hreflang="ru" href="https://kibls.neocities.org/ru/ru_gtranslate">
+   <link rel="alternate" hreflang="zh" href="https://kibls.neocities.org/zh/zh_gtranslate">
+   <link rel="canonical" href="https://kibls.neocities.org/en/en_gtranslate">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     #search {
+	display: none;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="en_home.html">Home &#10148;</a></li>
+    <li aria-current="page">Google Translate</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="../resources/scripts/en/results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; Enter verses or title to search for" title="Enter search keywords">
+  <input type="submit" value="Search" id="searchbtn" name="search">
+</form>
+
+<a href="en_home.html" title="Back to main page" aria-label="Back to main page">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_white_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_white_small.jpg" alt="Chessboard">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_black_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_black_small.jpg" alt="Chessboard">
+</picture>
+</div></a>
+
+<nav class="wrapping">
+    <div tabindex="0" class="menutop">&#x2630; Menu
+        <ul class="menutop-dropdown">
+            <li><a href="en_home.html">&#x1F3E0; Home</a></li>
+            <li><a href="en_browse.html">&#x1F50D; Browse</a></li>
+            <li><a href="en_overview.html">&#x1F4DA; E-book overview</a></li>
+            <li><a href="en_artwork.html">&#x1F3A8; Digital Artwork</a></li>
+            <li><a href="en_poetics.html">&#x1F4DD; Poetics</a></li>
+            <li><a href="en_support.html">&#127873; Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="menutop toprightone" tabindex="0" aria-label="Open language selection" style="padding:6px;">English
+  <ul class="menutop-dropdown topright">
+      <li><a href="#" class="activemenu" onclick="return false;" title="Actively selected language">English</a></li>
+      <li><a href="../de/de_gtranslate.html" title="Change language to German">German</a></li>
+      <li><a href="../zh/zh_gtranslate.html" title="Change language to Chinese">Chinese</a></li>
+      <li><a href="../es/es_gtranslate.html" title="Change language to Espanol">Spanish</a></li>
+      <li><a href="../ru/ru_gtranslate.html" title="Change language to Russian">Russian</a></li>
+      <li><a href="#" class="activemenu" onclick="return false;" title="Select another language">Other</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Toggle light and dark mode."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>GOOGLE TRANSLATOR</h1>
+
+<h2>Choose your language</h2>
+
+<button class="btnmove" onclick='selects()' title="Open the Annotations">Open all</button>
+<button onclick='deSelect()' title="Close the Annotations">Close all</button>
+
+<main>
+
+<details><summary id="translations">Annotations</summary>
+
+<div class="content">
+
+Google translations are often sufficiently well translated, but for many poem passages it is inadequate. Even the design of the website is often a bit messed up.<br><br>When you try to switch between different languages, the translator sometimes crashes. Therefore, it is advisable to change the language only once (to your native language).<br><br>For more accurate translations, please use <a href="https://www.deepl.com/translator" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: red;">DeepL</a>.
+
+</div></details>
+
+</main>
+
+ <table style="width:100%; font-family:Arial;">
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=af&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Afrikaans</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=sq&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">shqiptare</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ar&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">عربي</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=hy&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">հայերեն</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=az&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Azərbaycan</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=be&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">беларуская</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=bn&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">বাংলা</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=bs&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">bosanski</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=bg&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">български</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=zh-CN&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">中国人</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=da&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">dansk</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=eo&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Esperanto</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=et&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">eesti keel</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=tl&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Filipino</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=fi&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Suomalainen</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=fr&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Français</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ka&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">ქართული</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=el&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Ελληνικά</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=iw&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">עִברִית</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=hi&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">हिन्दी</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=it&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Italiano</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">スペイン語</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=kk&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Kazakh</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=hr&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Hrvatski</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=lv&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">latviski</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ms&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Malaysia</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=nl&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Nederlands</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=no&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">norsk</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=pl&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Polski</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=pt&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Português</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ro&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Română</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=ru&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Русский</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=sv&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">svenska</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=sr&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Српски</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=sl&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Slovenščina</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=es&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">español</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=th&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">ไทย</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=cs&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">čeština</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=tr&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Türk</a></th>
+  </tr>
+  <tr>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=uk&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">український</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=hu&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Magyar</a></th>
+    <th><a href="https://kibls-neocities-org.translate.goog/en/en_gtranslate?_x_tr_sl=en&amp;_x_tr_tl=vi&amp;_x_tr_hl=de&amp;_x_tr_pto=wapp" class="link">Tiếng Việt</a></th>
+  </tr>
+</table> 
+<br>
+
+<div class="content">If you don't find your language, select it in the top window of Google after selecting another language.</div>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+
+<br>
+
+<footer class="contact">KiBLS Poetry 2007<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="en_info.html" class="contact" style="display:inline-block;">Info/Faq</a> - <a href="en_terms.html" class="contact" style="display:inline-block;">Terms</a> - <a href="en_privacy.html" class="contact" style="display:inline-block;">Privacy</a> - <a href="en_contact.html" class="contact" style="display:inline-block;">Contact</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></footer>
+
+<script type="text/javascript" src="../resources/scripts/openclose.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

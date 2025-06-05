@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="utf-8">
+   <meta name="robots" content="index, follow">
+   <meta name="description" content="Here you can find news about changes on the website. This section is currently not maintained.">
+   <meta name="keywords" content="poetry, poems, poem, literature, art, creativity">
+   <meta name="author" content="KiBLS">
+   <meta name="referrer" content="origin-when-crossorigin">
+   <title>KiBLS Poetry Collection</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../butterfly180.png">
+   <link rel="icon" type="image/svg" href="../butterfly120.svg" sizes="120x120">
+   <link rel="icon" type="image/png" href="../butterfly48.png" sizes="48x48">
+   <link rel="icon" type="image/png" href="../butterfly32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="../butterfly16.png" sizes="16x16">
+   <link rel="stylesheet" type="text/css" href="../resources/styles/kiblsstyle.css" id="theme-link">
+   <link rel="alternate" hreflang="de" href="https://kibls.neocities.org/de/de_news">
+   <link rel="canonical" href="https://kibls.neocities.org/en/en_news">
+   <noscript>
+    <style>
+     .btn-toggle {
+	display: none;
+     }
+     button {
+	display: none;
+     }
+     .content {
+	border-radius: 20px;
+     }
+     #search {
+	display: none;
+     }
+     .yearjsdisabled {
+	display: inline-block;
+     }
+    </style>
+   </noscript>
+</head>
+
+<body>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <ul>
+    <li><a href="en_home.html">Home &#10148;</a></li>
+    <li aria-current="page">Website News</li>
+  </ul>
+</nav>
+
+<form id="search" name="search" action="../resources/scripts/en/results.html" method="get" title="Search" role="search">
+  <label for="searchinput" id="hiddensearch">Keyword Search</label>
+  <input type="text" name="searchTxt" id="searchinput" placeholder="&#128270; Enter verses or title to search for" title="Enter search keywords">
+  <input type="submit" value="Search" id="searchbtn" name="search">
+</form>
+
+<a href="en_home.html" title="Back to main page" aria-label="Back to main page">
+<div class="fader">
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_white_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_white_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_white_small.jpg" alt="Chessboard">
+</picture>
+<picture>
+  <source media="(max-width: 2158px)" srcset="../resources/chess/en_chess_black_small.webp" type="image/webp">
+  <source media="(min-width: 2159px)" srcset="../resources/chess/en_chess_black_large.webp" type="image/webp"> 
+  <img src="../resources/chess/en_chess_black_small.jpg" alt="Chessboard">
+</picture>
+</div></a>
+
+<nav class="wrapping" aria-label="Open navigation">
+    <div tabindex="0" class="menutop">&#x2630; Menu
+        <ul class="menutop-dropdown">
+            <li><a href="en_home.html">&#x1F3E0; Home</a></li>
+            <li><a href="en_browse.html">&#x1F50D; Browse</a></li>
+            <li><a href="en_overview.html">&#x1F4DA; E-book overview</a></li>
+            <li><a href="en_artwork.html">&#x1F3A8; Digital Artwork</a></li>
+            <li><a href="en_poetics.html">&#x1F4DD; Poetics</a></li>
+            <li><a href="en_support.html">&#127873; Support</a></li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="menutop toprightone" tabindex="0" aria-label="Open language selection" style="padding:6px;">English
+  <ul class="menutop-dropdown topright">
+      <li><a href="#" class="activemenu" onclick="return false;" title="Actively selected language">English</a></li>
+      <li><a href="../de/de_news.html" title="Change language to German">German</a></li>
+      <li><a href="../zh/zh_home.html" title="Change language to Chinese">Chinese</a></li>
+      <li><a href="../es/es_home.html" title="Change language to Espanol">Spanish</a></li>
+      <li><a href="../ru/ru_home.html" title="Change language to Russian">Russian</a></li>
+      <li><a href="en_gtranslate.html" title="Select another language">Other</a></li>
+    </ul>
+</nav>
+
+<div class="btn-toggle" title="Toggle light and dark mode."><div class="square black"><span class="sunicon">{</span></div><div class="square white"><span class="moonicon">}</span></div></div>
+
+<br>
+
+<h1>SITE NEWS</h1>
+
+<h2>Here you find infos about website updates</h2>
+
+<button class="btnmove" onclick='selects()' title="Open all books with one click">Open all</button>
+<button onclick='deSelect()' title="Close all books with one click">Close all</button>
+
+<main>
+
+<details><summary id="news4"><span class="poemnr">2023 -</span> March</summary>
+
+<div class="content">
+
+<h3 class="graphictitle">March 2023</h3>
+
+<div class="poem">
+
+<table style="margin-top:10px;">
+  <tr>
+  <td>19.05.2023<br><br></td>
+  <td style="padding-left:10px;">CSS bug concerning the menu on mobile devices solved.<br><br></td>
+  </tr>
+  <tr>
+  <td>18.05.2023<br><br></td>
+  <td style="padding-left:10px;">Integrated Chinese search engine and added all keywords.<br><br></td>
+  </tr>
+  <tr>
+  <td>17.05.2023<br><br></td>
+  <td style="padding-left:10px;">All poems translated into Chinese with the help of artificial intelligence<br><br></td>
+  </tr>
+  <tr>
+  <td>10.05.2023<br><br></td>
+  <td style="padding-left:10px;">Basic structure translated and created in Chinese<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">The entire structure of the website was redesigned.<br><br></td>
+  </tr>
+  <tr>
+  <td>08.05.2023<br><br></td>
+  <td style="padding-left:10px;">Improved descriptions of the German search engine (but still incomplete).<br><br></td>
+  </tr>
+  <tr>
+  <td>07.05.2023<br><br></td>
+  <td style="padding-left:10px;">Created and integrated the new search engine in the German section.<br><br></td>
+  </tr>
+  <tr>
+  <td>06.05.2023<br><br></td>
+  <td style="padding-left:10px;">Search engine completely replaced and rebuilt.<br><br></td>
+  </tr>
+  <tr>
+  <td>04.05.2023<br><br></td>
+  <td style="padding-left:10px;">Removed voting system due to cross-origin problems.<br><br></td>
+  </tr>
+  <tr>
+  <td>02.05.2023<br><br></td>
+  <td style="padding-left:10px;">Improved search engine and formatted search results more appealingly.<br><br></td>
+  </tr>
+</table>
+
+</div></div></details>
+
+<details><summary id="news3"><span class="poemnr">2023 -</span> April</summary>
+
+<div class="content">
+
+<h3 class="graphictitle">April 2023</h3>
+
+<div class="poem">
+
+<table style="margin-top:10px;">
+  <tr>
+  <td>26.04.2023<br><br></td>
+  <td style="padding-left:10px;">Improved semantics of the website.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Reduced website loading times.<br><br></td>
+  </tr>
+  <tr>
+  <td>25.04.2023<br><br></td>
+  <td style="padding-left:10px;">Added all vendor prefixes and cleaned up redundancies.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added "a new look" to the menu.<br><br></td>
+  </tr>
+  <tr>
+  <td>24.04.2023<br><br></td>
+  <td style="padding-left:10px;">Added poem graphic borders for website to random generator to create random borders on images.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">A lot of HTML adjusted and optimized / CSS also matched.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">NoScript messages written if JavaScript is not enabled. The website will work without JavaScript but with reduced features.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Fixed CSS errors caused by the compression.<br><br></td>
+  </tr>
+  <tr>
+  <td>23.04.2023<br><br></td>
+  <td style="padding-left:10px;">Highly compressed CSS and sorted alphabetically.<br><br></td>
+  </tr>
+  <tr>
+  <td>22.04.2023<br><br></td>
+  <td style="padding-left:10px;">Created random border generator script for all summary tags.<br><br></td>
+  </tr>
+  <tr>
+  <td>21.04.2023<br><br></td>
+  <td style="padding-left:10px;">Made many improvements in CSS. Light animation set up for button.<br><br></td>
+  </tr>
+  <tr>
+  <td>18.04.2023<br><br></td>
+  <td style="padding-left:10px;">Improved CSS background of the poems.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added a license line under all poem graphics from the Digital Artwork section to facilitate an easier and simpler distribution.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Improved javascript to show the current poem URL in the browser bar.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Created and uploaded 7 new poem graphics.<br><br></td>
+  </tr>
+  <tr>
+  <td>17.04.2023<br><br></td>
+  <td style="padding-left:10px;">Revised Digital Artwork section and created and uploaded 11 new poetry graphics (in English!).<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">English information section has been started to revise.<br><br></td>
+  </tr>
+  <tr>
+  <td>16.04.2023<br><br></td>
+  <td style="padding-left:10px;">Created and uploaded 4 new poem graphics.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Completed, linked and uploaded all .txt files for download in the German section.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Improved and adjusted button for light and dark mode.<br><br></td>
+  </tr>
+  <tr>
+  <td>15.04.2023<br><br></td>
+  <td style="padding-left:10px;">Javascript sorting script for the poems fully implemented and integrated.<br><br></td>
+  </tr>
+  <tr>
+  <td>14.04.2023<br><br></td>
+  <td style="padding-left:10px;">Created thumbnails for the 3D animations.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated sitemap.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Repaired broken links.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed interfering meta tags.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Optimized and customized javascript.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Validated every single page in W3 Validator.<br><br></td>
+  </tr>
+  <tr>
+  <td>13.04.2023<br><br></td>
+  <td style="padding-left:10px;">Updated meta tags in layout 2 and modified all invalid tags to pass the W3 validation.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Replaced main graphic throughout with sprites to increase page speed and minimize HTTP requests.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Introduced cache-control meta tag but deleted it shortly after because it does not pass the W3 validation.<br><br></td>
+  </tr>
+  <tr>
+  <td>12.04.2023<br><br></td>
+  <td style="padding-left:10px;">Changed ornament tags from div to span for a better semantic.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added a br tag below each poem heading and adjusted the CSS accordingly.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added one-click poem copy function in javascript.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">h6 tags were embedded in summary tags.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Javascript copy and paste script was completely revised.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Poems were embedded in section tags for a one-click copy function.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Breadcrumb navigation completed in the German section.<br><br></td>
+  </tr>
+  <tr>
+  <td>11.04.2023<br><br></td>
+  <td style="padding-left:10px;">The category c_en was renamed into hashtag to display the breadcrumb navigation better understandable, all links were adjusted accordingly.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">The meta tag "strict-origin-when-crossorigin" caused problems in the console for many pages, replaced it with "origin-when-crossorigin".<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Created javascript for the voting form so that the breadcrumb navigation displays the previous and the current links properly.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Breadcrumb navigation in english area completed.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added HTML meta tag "strict-origin-when-crossorigin" to increase privacy and security of the website.<br><br></td>
+  </tr>
+  <tr>
+  <td>10.04.2023<br><br></td>
+  <td style="padding-left:10px;">HTML attributes noopener and noreferrer added to increase site security.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Started to create a breadcrumb navigation.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Created a home site.<br><br></td>
+  </tr>
+  <tr>
+  <td>09.04.2023<br><br></td>
+  <td style="padding-left:10px;">Added Aria-label tag to qualifying elements.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">All HTML validation errors in the hashtag search have been fixed.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Uploaded some German poem graphics and restructured the German graphics section to match the English section.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">The URL copy function and the voting function do not yet work with the hashtag search. Problem is under construction.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">The category Information needs a complete overhaul and will therefore be useless for a longer period of time.<br><br></td>
+  </tr>
+  <tr>
+  <td>07.04.2023<br><br></td>
+  <td style="padding-left:10px;">Designed a new nesting format to display the license information of the poetry graphics (category artwork) in a proper and stylish way.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Converted end part from normal div into footer tag.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Converted menu from normal div into nav tag.<br><br></td>
+  </tr>
+  <tr>
+  <td>06.04.2023<br><br></td>
+  <td style="padding-left:10px;">There are currently html display and also validation issues with the nested pages of the poetry graphics and the faq section.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Goatcounter scripts have been completely removed because the majority of the readers are using adblockers or similar scripts.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added "canonical link" and "hreflang link" in the head area since the website is multilingual.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed surplus iframes from the hashtag search.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Changed language from en-gb to en.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">URL to the respective poem is now displayed in the browser to facilitate copy and paste.<br><br></td>
+  </tr>
+  <tr>
+  <td>05.04.2023<br><br></td>
+  <td style="padding-left:10px;">Fixed problems with the menu in CSS.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed the loading="eager" attribute from main graphics because it is anyway the default mode.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated meta tags with specific keywords and changed website description.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">All buttons that were embedded in "a-tags" have been modified.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Enclosed all poems into article tags to increase accessibility but also readability for screen readers etc..<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Corrected the HTML meta tags.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Corrected and semantically improved HTML code of the search form.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed the attribute type="button" from all button tags.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">replaced Less-than sign with &#8249;&#8249;&#8249; to increase accessibility and readability.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">replaced More-than sign with &#8250;&#8250;&#8250; to increase accessibility and readability.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Checked website for HTML problems with W3 HTML Validator.<br><br></td>
+  </tr>
+  <tr>
+  <td>04.04.2023<br><br></td>
+  <td style="padding-left:10px;">Optimized the Javascript URL copy function and replaced it everywhere.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added URL copy option for all poetry graphics in category artwork.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added URL copy option for the 3d graphics in the German layout<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed spaces from all graphic filenames.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Individual CSS errors due to the new structure have been adjusted.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Javascript was adapted to the new structure<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">The structure of the website has been completely changed from "checkbox hack" to "details/summary tags".<br><br></td>
+  </tr>
+  <tr>
+  <td>03.04.2023<br><br></td>
+  <td style="padding-left:10px;">Already after the first book conversion to details/summary tags the first CSS/design errors appeared which are now fixed. Now I continue the conversion of the rest of the website.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Started to change the entire page structure from the "checkbox hack" to "details and summary tags" to provide a better accessibility for blind and deaf people and to further improve the semantic structure for search engines and several reader devices.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Converted all poem headings from "b tag/element" to "h3 tag/element" to improve the semantic structure.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Fixed in German book 14 a critical html error.<br><br></td>
+  </tr>
+  <tr>
+  <td>02.04.2023<br><br></td>
+  <td style="padding-left:10px;">A gift button was placed under each poem as a way to support KiBLS Poetry.<br><br></td>
+  </tr>
+  <tr>
+  <td>01.04.2023<br><br></td>
+  <td style="padding-left:10px;">The first (very short) writing articles were added to the Writings category.<br><br></td>
+  </tr>
+</table>
+
+</div></div></details>
+
+<details><summary id="news2"><span class="poemnr">2023 -</span> March</summary>
+
+<div class="content">
+
+<h3 class="graphictitle">March 2023</h3>
+
+<div class="poem">
+
+<table style="margin-top:10px;">
+  <tr>
+  <td>31.03.2023<br><br></td>
+  <td style="padding-left:10px;">Translated book 29 completely into German.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Basic structure for book 29 translated into German and optimized.<br><br></td>
+  </tr>
+  <tr>
+  <td>30.03.2023<br><br></td>
+  <td style="padding-left:10px;">Integrated book 29 into the hashtag search.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated voting function for book 29.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Compressed all news entries.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">All MP3 files of book 29 created and uploaded.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Adapted descriptions for the search engine for book number 24, 25, 26, 27, 28 and 29.<br><br></td>
+  </tr>
+  <tr>
+  <td>29.03.2023<br><br></td>
+  <td style="padding-left:10px;">Adapted descriptions for the search engine for book number 12, 13, 14, 15, 16, 17, 18 19, 20, 21, 22 and 23.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Fixed CSS menu problem in the german layout<br><br></td>
+  </tr>
+  <tr>
+  <td>28.03.2023<br><br></td>
+  <td style="padding-left:10px;">Adapted descriptions for the search engine for book number 4, 5, 6, 7, 8, 9, 10 and 11.<br><br></td>
+  </tr>
+  <tr>
+  <td>27.03.2023<br><br></td>
+  <td style="padding-left:10px;">Adapted descriptions for the search engine for book number 2 and 3.<br><br></td>
+  </tr>
+  <tr>
+  <td>26.03.2023<br><br></td>
+  <td style="padding-left:10px;">Adapted descriptions for the search engine for book number 1.<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added all graphics for the poems of book 29<br><br></td>
+  </tr>
+  <tr>
+  <td>25.03.2023<br><br></td>
+  <td style="padding-left:10px;">Categorized poems of book 29 for the hashtag search<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search categories wisdom and trust completely<br><br></td>
+  </tr>
+  <tr>
+  <td>24.03.2023<br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search categories thought provoking, theater, self-realization, sarcasm, relaxation, relationship, prophecy, nature, motivating, materialism, love, life advice, knowledge, know thyself and inspiring completely<br><br></td>
+  </tr>
+  <tr>
+  <td>23.03.2023<br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search categories inspiring, insight, illumination, health, flowers and gratitude completely<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Fixed all broken and outdated google translate links<br><br></td>
+  </tr>
+  <tr>
+  <td>22.03.2023<br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search categories fable, encouraging, dystopic, cryptic, connections and change completely<br><br></td>
+  </tr>
+  <tr>
+  <td>18.03.2023<br><br></td>
+  <td style="padding-left:10px;">Updated links in the german section<br><br></td>
+  </tr>
+  <tr>
+  <td>12.03.2023<br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search category analogy completely<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Embedded the entire news section into a table<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Modified the titles in the hashtag search category KiBLS<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Corrected the numbering of the CSS checkboxes and labels in the hashtag search category KiBLS<br><br></td>
+  </tr>
+  <tr>
+  <td>11.03.2023<br><br></td>
+  <td style="padding-left:10px;">Fixed all links except book 29 (because of "still" missing graphics)<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Removed redundant and old named html pages<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search category KiBLS completely<br><br></td>
+  </tr>
+  <tr>
+  <td>09.03.2023<br><br></td>
+  <td style="padding-left:10px;">Removed CSS title tags from the menu for a better usability and readability<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Updated hashtag search category KiBLS until e-book 02<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Heading fonts of the new graphics adjusted<br><br></td>
+  </tr>
+  <tr>
+  <td>08.03.2023<br><br></td>
+  <td style="padding-left:10px;">Fixed many broken links<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Menu has been updated on every site<br><br></td>
+  </tr>
+  <tr>
+  <td><br><br></td>
+  <td style="padding-left:10px;">Added a new "writings" and a "news" section<br><br></td>
+  </tr>
+  <tr>
+  <td>07.03.2023<br><br></td>
+  <td style="padding-left:10px;">Added many new (respectively old) poetry graphics<br><br></td>
+  </tr>
+  <tr>
+  <td>06.03.2023<br><br></td>
+  <td style="padding-left:10px;">Graphic section was expanded and adjusted<br><br></td>
+  </tr>
+</table>
+
+</div></div></details>
+
+<details><summary id="news1"><span class="poemnr">2023 -</span> February</summary>
+
+<div class="content">
+
+<h3 class="graphictitle">February 2023</h3>
+
+<div class="poem">
+
+<table style="margin-top:10px;">
+  <tr>
+  <td>28.02.2023<br><br></td>
+  <td style="padding-left:10px;">Added poems of e-book 29 in layout 2<br><br></td>
+  </tr>
+  <tr>
+  <td>27.02.2023<br><br></td>
+  <td style="padding-left:10px;">Added txt files of e-book 29 for download<br><br></td>
+  </tr>
+  <tr>
+  <td>20.02.2023<br><br></td>
+  <td style="padding-left:10px;">Added e-book number 29<br><br></td>
+  </tr>
+</table>
+
+</div></div></details>
+
+</main>
+
+<button onclick="topFunction()" id="myBtn"><span class="arrowup"></span></button>
+
+<br>
+
+<footer class="contact">KiBLS Poetry 2007<span class="separator">-</span><span class="yearjsdisabled">&#8734;</span><span id="currentyear"></span><br><a href="en_info.html" class="contact" style="display:inline-block;">Info/Faq</a> - <a href="en_terms.html" class="contact" style="display:inline-block;">Terms</a> - <a href="en_privacy.html" class="contact" style="display:inline-block;">Privacy</a> - <a href="en_contact.html" class="contact" style="display:inline-block;">Contact</a><br><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="contact" target="_blank" rel="noopener noreferrer">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a></footer>
+
+<script type="text/javascript" src="../resources/scripts/openclose.js"></script>
+
+<script>
+document.querySelectorAll('.yearjsdisabled').forEach(function(element) {
+  element.style.display = 'none';
+});
+</script>
+
+</body>
+</html>

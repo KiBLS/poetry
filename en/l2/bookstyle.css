@@ -1,0 +1,252 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 15.5px;
+	font-family: KiBLS_Font_Official, sans-serif;
+	background-image: radial-gradient(ellipse at center, #9fdadf 0%, #9fbadf 100%);
+}
+@font-face {
+	font-family:"KiBLS_Font_Official";
+	src:	url(../../resources/Fonts/KiBLS_Font_Official.woff2)format("woff2"),
+		url(../../resources/Fonts/KiBLS_Font_Official.woff)format("woff"),
+		url(../../resources/Fonts/KiBLS_Font_Official.ttf) format("truetype");
+	font-display: swap;
+}
+@font-face {
+	font-family: "KiBLS_Chess_Font";
+	src: 	url(../../resources/Fonts/KiBLS_Chess_Font.woff2) format("woff2"),
+		url(../../resources/Fonts/KiBLS_Chess_Font.woff) format("woff"),
+		url(../../resources/Fonts/KiBLS_Chess_Font.ttf) format("truetype");
+	font-display: swap;
+}
+.book {
+	width: 900px;
+	max-width: 100%;
+	height: 600px;
+	max-height: 70vw;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	perspective: 1500px;
+	user-select: none;
+	animation: 0.55s 1 fadein;
+	opacity: 0;
+}
+@keyframes fadein {
+	0%      { opacity: 0; }
+	100%    { opacity: 1; }
+}
+.book {
+	opacity: 1;
+}
+.page {
+	width: 49%;
+	height: 98%;
+	padding-top: clamp(0.7rem, 1.2vw, 0.7rem);
+	padding-bottom: 20px;
+	padding-left: clamp(1.3rem, 3vw, 3rem);
+	padding-right: clamp(1.3rem, 3vw, 3rem);
+	position: absolute;
+	top: 1%;
+	left: 50%;
+	font-size: clamp(0.3rem, 1.75vw, 1.25rem);
+	line-height: clamp(0.01rem, 1.45vw, 1.2rem);
+	color: black;
+	cursor: pointer;
+	background-color: #f0f0f0;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 10%);
+	transition: transform 0.5s;
+	transform: rotateY(-180deg);
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+	transform-origin: left center;
+	z-index: 4;
+	text-align: center;
+}
+.page:nth-of-type(2n) {
+	left: 1px;
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0) 10%);
+	transform-origin: right center;
+	transform: rotateY(0);
+}
+.page:nth-of-type(2n):not(.cover) {
+	left: calc(1% + 1px);
+}
+input[type=radio] {
+	display: none;
+}
+input:checked ~ .page {
+	transform: rotateY(0);
+}
+input:checked ~ .page:nth-of-type(2n) {
+	transform: rotateY(180deg);
+}
+input:checked ~ .page:nth-of-type(2n-1) {
+	z-index: 3;
+}
+input:checked ~ .page:nth-of-type(2n-1) ~ .page:nth-of-type(2n-1) {
+	z-index: 1;
+}
+input:checked + .page + .page + input + .page {
+	z-index: 2 !important;
+}
+/* cover border radius and back of the spine carbon pattern start */
+.cover {
+	width: 50%;
+	height: 100%;
+	top: 0;
+	border-radius: 0 3px 3px 0;
+	background-image: 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+	background-size: 10px 10px, 10px 10px, 10px 5px;
+	background-color: #800000;
+	padding: 15px 20px 10px 20px;
+}
+/* backview cover border radius and carbon pattern start */
+.cover + .cover {
+	border-radius: 3px 0 0 3px;
+	background-image: 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+	background-size: 10px 10px, 10px 10px, 10px 5px;
+	background-color: #800000;
+}
+/* cover title start */
+#h1 {
+	color: #f0f0f0;
+	text-align: center;
+	line-height: calc(16px + (54 - 24) * ((100vw - 360px) / 1560));
+	font-size: calc(16px + (54 - 24) * ((100vw - 360px) / 1560));
+	line-height: clamp(0.95rem, 3.5vw, 3rem);
+	font-size: clamp(0.95rem, 3.5vw, 2.6rem);
+	font-family: KiBLS_Chess_Font, sans-serif;
+	font-weight: bold;
+}
+.ptitle {
+	color: black;
+	text-align: center;
+	font-size: 24px;
+}
+/* cover image size start */
+.cover img {
+	width: 100%;
+	height: auto;
+	opacity: 0.95;
+	margin: 4px 0 15px 0;
+}
+/* front-cover carbon pattern start */
+.cover:first-of-type, .cover:last-of-type {
+	background-image: 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(45deg, #121212 25%, transparent 25%, transparent 75%, #121212 75%, #121212), 
+	linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+	background-size: 10px 10px, 10px 10px, 10px 5px;
+	background-position: 0px 0px, 5px 5px, 0px 0px;
+	background-color: #800000;
+	text-align: center;
+}
+/* cover seam start */
+.cover:first-of-type::before, .cover:last-of-type::before {
+
+}
+/* page numeration in general start */
+.pagenumber {
+	position: absolute;
+	font-weight: bold;
+	font-size: clamp(0.35rem, 1.5vw, 1.1rem);
+	left: 50%;
+	bottom: 1%;
+}
+/* table of content start */
+.tableofcontent {
+	float: left;
+}
+/* page numeration in table of content start */
+.pagenum {
+	float:right;
+
+}
+/* table of content divider start */
+.poemtext {
+	text-align: center;
+	color: #121212;
+	font-size: clamp(0.35rem, 1.95vw, 1.2rem);
+	line-height: clamp(0.35rem, 1.95vw, 1.2rem);
+}
+.author {
+	text-align: center;
+	font-family: KiBLS_Chess_Font, sans-serif;
+	font-size: clamp(0.4rem, 1.4vw, 1.2rem);
+	line-height: clamp(0.4rem, 1.4vw, 1.2rem);
+}
+/* arrow if a poem is too long start */
+.nextpage {
+	font-size: clamp(1.1rem, 3.7vw, 3rem);
+	opacity: 0.7;
+}
+#menu {
+	font-family: KiBLS_Chess_Font, sans-serif;
+	text-transform: uppercase;
+	font-weight:bold;
+	font-size: clamp(0.7rem, 1.5vw, 1.3rem);
+	text-align: center;
+	margin-top:72.5%;
+}
+#menu a {
+	color: #121212;
+	text-decoration: none;
+}
+#menubtn1, #menubtn2, #menubtn3, #menubtn4, #menubtn5 {
+	border: 2px solid black;
+	border-radius: 4px;
+	padding: 4px 2px 0px 2px;
+	background: #dfa49f;
+	cursor: pointer;
+}
+.menubtn:hover {
+	border: 2px solid #333300;
+	color: white;
+	background: #333300;
+}
+/* media queries for mobile devices start -------------------------------------------------------------------*/
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+	.book {
+		top: 75%;
+	}
+  	.page {
+		font-size: clamp(0.7rem, 1.85vw, 1.2rem);
+		line-height: clamp(0.55rem, 1.85vw, 1.2rem);
+	}
+	.poemtext {
+		font-size: clamp(0.70rem, 1.65vw, 1.2rem);
+		line-height: clamp(0.65rem, 1.55vw, 1.2rem);
+	}
+	.nextpage {
+		font-size: clamp(1.45rem, 3.85vw, 3rem);
+	}
+}
+@media only screen and (max-height: 575.98px) and (orientation: portrait) {
+	.book {
+		top: 50%;
+	}
+  	.page {
+		font-size: clamp(0.4rem, 1.1vw, 1.2rem);
+		line-height: clamp(0.3rem, 1.1vw, 1.2rem);
+	}
+	.poemtext {
+		font-size: clamp(0.4rem, 1.1vw, 1.2rem);
+		line-height: clamp(0.4rem, 1.1vw, 1.2rem);
+	}
+	.nextpage {
+		font-size: clamp(1.45rem, 3.85vw, 3rem);
+	}
+}

@@ -1,0 +1,8 @@
+{
+  "name": "kibls_bot",
+  "description": "Ein Bastyon Bot für XYZ",
+  "url": "https://kibls.github.io/poetry/",
+  "icon": "https://kibls.github.io/poetry/b_icon.png",
+  "scopes": ["profile", "posts"],
+  "redirect_url": "https://kibls.github.io/poetry/callback"
+}

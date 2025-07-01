@@ -1,8 +1,9 @@
 {
+  "id": "kiblsbot.app",
   "name": "kibls_bot",
   "description": "Ein Bastyon Bot für XYZ",
-  "url": "https://kibls.github.io/poetry/",
-  "icon": "https://kibls.github.io/poetry/b_icon.png",
-  "scopes": ["profile", "posts"],
-  "redirect_url": "https://kibls.github.io/poetry/callback"
+  "author": "PQ8AiCHJaTZAThr2TnpkQYDyVd1Hidq4PM",
+  "permissions": ["account", "notifications", "messaging"],
+  "domain": "kibls.github.io/poetry",
+  "development_domain": "localhost:3333"
 }
